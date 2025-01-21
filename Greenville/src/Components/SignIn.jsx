@@ -20,7 +20,7 @@ export default function SignIn() {
         <a>Forgot Password?</a>
       </form>
       <p>
-        Don't have a Account? <span>Sign Up</span>
+        New here? <span>Sign Up</span>
       </p>
     </>
   );

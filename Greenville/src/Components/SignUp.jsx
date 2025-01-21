@@ -1,7 +1,7 @@
 export default function SignUp() {
   return (
     <>
-    <h1>Ecowaste Sign Up</h1>
+    <h1>Ecowaste Sign Up </h1>
     <form>
       <div className="container" id="names">
         <label className="label">
