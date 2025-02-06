@@ -1,9 +1,9 @@
 export default function WhatIsGreenville() {
   return (
     <>
-    <div>
-      <h1>What is Greenille</h1>
-      <p>
+    <div className="whatIsGreenville">
+      <h1 className="wigHeader">What is Greenille</h1>
+      <p className="wigParagraph">
         Greenville is an innovative waste management app designed to transform
         the way Lagos tackles waste disposal. Our mission is to create a
         cleaner, healthier, and more sustainable Lagos by harnessing the power
@@ -17,11 +17,11 @@ export default function WhatIsGreenville() {
       </div>
       <div>
       <div className="Stats">
-        <img src="" alt="globe"></img>
+        <img src="./assets/icons/Vector-1.png" alt="globe"></img>
         <p>Collected Yearly</p>
       </div>
       <div>
-        <img src="" alt="globe"></img>
+        <img src="./ass" alt="globe"></img>
         <p>Collected Yearly</p>
       </div>
       <div>
