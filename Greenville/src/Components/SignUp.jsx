@@ -1,15 +1,15 @@
 export default function SignUp() {
   return (
     <>
-    <h1>Ecowaste Sign Up </h1>
-    <form>
-      <div className="container" id="names">
+    <h1 className="signUpHeader">Ecowaste Sign Up </h1>
+    <form className="signUpForm">
+      <div className="signUpContainer" >
         <label className="label">
           First Name
           <input
             type="text"
             name="Name"
-            placeholder="Enter First Name"
+            placeholder=" "
             required
           />
         </label>
@@ -18,20 +18,20 @@ export default function SignUp() {
           <input
             type="text"
             name="name"
-            placeholder="Enter Last Name"
+            placeholder=""
             required
           />
         </label>
         <label className="label">
           Email
-          <input type="email" name="Email" placeholder="Enter Email" required />
+          <input type="email" name="Email" placeholder=" " required />
         </label>
         <label className="label">
           Password
           <input
             type="password"
             name="password"
-            placeholder="Enter Password"
+            placeholder=" "
             required
           />
         </label>
@@ -40,23 +40,24 @@ export default function SignUp() {
           <input
             type="password"
             name="password"
-            placeholder="Confirm Password"
+            placeholder=" "
             required
           />
         </label>
       </div>
-      <div className="form-btns">
-        <button>Sign Up</button>
-        or
-        <button>Sign Up with Google </button>
+      <div className="signUpbtns">
+        <button className="signUpbtn">Sign Up</button>
+        <p className="or">Or</p>
+        <button className="signUpGoogle">Sign Up with Google </button>
       </div>
+      <p className="haveAccount">
+        Already have a Account? <span>Log In</span>
+      </p>
       <div className="lowerText">
                 <p>By clicking continue, I agree to <a href="">Terms of Use</a> and acknowledge that I
                     have read the <a href="">Privacy Policy</a></p>
                 </div>
-      <p>
-        Already have a Account? <span>Log In</span>
-      </p>
+    
     </form>
     </>
     
