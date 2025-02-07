@@ -1,8 +1,8 @@
 export default function OurService(){
     return(
         <>
-        <h1>Our Services</h1>
-        <div>
+        <h1 className="serviceHeader">Our Services</h1>
+        <div >
             <div>
                 <img src="" alt="industry"/>
                 <h3>Industrial Waste Management</h3>

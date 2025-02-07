@@ -263,6 +263,134 @@ span{
 .wigParagraph{
   text-align: justify;
 }
+.statContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+.stat{
+  width: 350px;
+}
 
+/* Areas We Cover */
+.areaHeader{
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.areaContainer{
+  background:  linear-gradient(to right, var(--primary), var(--footer));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.firstRow{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0 auto;
+}
+.ikeja{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.vi{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.jakande{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.ikate{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.ikoyi{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.chevron{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.secondRow{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0 auto;
+}
+.thirdRow{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+/* Our Services */
+
+.serviceHeader{
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--primary);
+  margin: 1em auto;
+  text-align: center;
+}
 
 
