@@ -3,7 +3,7 @@ export default function Dashboard(){
         <>
         <div className="topNav">
         </div>
-        <h3> Hello {User} </h3>
+        <h3> Hello {username} </h3>
         <div className="TokenCard">
             <h2>Ecotokens</h2>
             <h3>Balance</h3>
