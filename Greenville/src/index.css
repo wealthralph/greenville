@@ -150,7 +150,7 @@ textarea{
   background: var(--primary);
   color: var(--secondary);
   border-radius: 8px;
-  margin: 1em auto;
+  margin: .4em auto;
   font-size: 18px;
 }
 .signUpGoogle{
@@ -160,7 +160,7 @@ textarea{
   color: var(--primary);
   border-radius: 8px;
   border: 1px solid var(--primary);
-  margin: 1em auto;
+  margin: .4em auto;
   font-size: 18px;
 }
 .or{
@@ -181,3 +181,332 @@ span{
   color: var(--primary);
 }
 
+/* Forgot Password */
+
+.forgotHeader{
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: var(--primary);
+}
+.forgotForm{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+.sendEmail{
+  width: 100%;
+  padding: 10px 15px;
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 8px;
+  margin: 1em auto;
+  font-size: 18px;
+}
+
+
+/* Hero Section */
+.heroContainer{
+  background-image: url("./assets/images/radowan-nakif-rehan-qgXz4qXViCg-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.heroItems{
+  align-self: center;
+  width: 90%;
+  text-align: center;
+  padding-top: 15em;
+  margin: 0 auto;
+}
+.heroText{
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+.heroBtn{
+  width: 200px;
+  padding: 10px 15px;
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 8px;
+  margin: 1em auto;
+  font-size: 18px;
+  align-self: center;
+  text-align: center;
+}
+
+/* What Is GreenVille section */
+
+.whatIsGreenville{
+  width: 90%;
+  margin: 0 auto;
+}
+.wigHeader{
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1em;
+}
+.wigParagraph{
+  text-align: justify;
+}
+.statContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+.stat{
+  width: 350px;
+}
+
+/* Areas We Cover */
+.areaHeader{
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.areaContainer{
+  background:  linear-gradient(to right, var(--primary), var(--footer));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.firstRow{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0 auto;
+}
+.ikeja{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.vi{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.jakande{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.ikate{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.ikoyi{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.chevron{
+  width: 140px;
+  background-image: url(./assets/images/images.jpg);
+  height: 140px;
+  background-size: cover;
+  border-radius: 8px;
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+.secondRow{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0 auto;
+}
+.thirdRow{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+/* Our Services */
+
+.serviceHeader{
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--primary);
+  margin: 1em auto;
+  text-align: center;
+}
+.icons{
+  width: 100px;
+  height: 100px;
+}
+
+/* Subscription Cards */
+
+
+/* Free */
+.sideCard{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 360px;
+  border: 1px solid  var(--primary);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9em 2em;
+  gap: 10px;
+  margin: 0 auto;
+
+}
+.subCardHeader{
+  font-size: 22px;
+  font-weight: medium;
+}
+.cardHeader{
+  margin-block: 1em;
+}
+.cardHeader h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+.cardHeader p{
+  font-size: 16px;
+}
+li + li{
+  margin-top: 2em;
+}
+.custom-check-list{
+  list-style: circle;
+}
+.cardButton{
+  width: 100%;
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 8px;
+  padding: 0.3em 0.9em;
+  font-size: 20px;
+  font-weight: medium;
+  margin-block: 1em;
+}
+.premiumCard{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: var(--footer);
+  color: var(--secondary);
+  border-radius: 20px;
+  max-width: 900px;
+}
+.premiumBtn{
+  background: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* Request PickUp */
+.pickupHeader{
+  color: var(--primary);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.pickupBtn{
+  width: 200px;
+  color: var(--secondary);
+  background: var(--primary);
+  margin: 0 auto;
+  padding: 0.5em 0.7em;
+  border-radius: 8px;
+  font-weight: medium;
+  font-size: 18px;
+  text-align: center;
+}
+.pickUp{
+  margin: 0 auto;
+  align-content: center;
+}
+
+/* Subscribe Email */
+.subscribeCon{
+  background: var(--footer);
+  color: var(--secondary);
+  padding:1em  2em;
+}
+.subInput{
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  background: var(--secondary);
+  color: var(--sub-text);
+}
+.subBtn{
+  width: 30%;
+  margin: 0 auto;
+  background: var(--primary);
+  padding: .6em 1em;
+  text-align: center;
+  border-radius: 6px;
+}
+.subSecHeader{
+  font-size: 20px;
+  font-weight: medium;
+  margin-block:0.5em;
+
+}
