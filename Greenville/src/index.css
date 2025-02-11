@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::after,
@@ -251,7 +250,8 @@ span{
 
 .whatIsGreenville{
   width: 90%;
-  margin: 0 auto;
+  margin: 2em auto;
+
 }
 .wigHeader{
   font-size: 26px;
@@ -261,7 +261,7 @@ span{
   margin-bottom: 1em;
 }
 .wigParagraph{
-  text-align: justify;
+  text-align: center;
 }
 .statContainer{
   display: flex;
@@ -269,8 +269,15 @@ span{
   margin: 0 auto;
   text-align: center;
 }
-.stat{
-  width: 350px;
+.stats{
+  align-self: center;
+  margin: 1em auto;
+  width: 70%;
+}
+.statIcon{
+  align-items: center;
+  width: 40px;
+  margin: 0 auto;
 }
 
 /* Areas We Cover */
@@ -284,7 +291,8 @@ span{
 }
 .areaContainer{
   background:  linear-gradient(to right, var(--primary), var(--footer));
-  height: 100vh;
+  margin-bottom: 1em;
+  padding-block: 1em;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -393,8 +401,16 @@ span{
   text-align: center;
 }
 .icons{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.serviceContainer{
+  margin: 0 auto;
+}
+.service{
+  text-align: center;
+  margin-block: 3em;
 }
 
 /* Subscription Cards */
@@ -403,7 +419,7 @@ span{
 /* Free */
 .sideCard{
   background-color: white;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 360px;
@@ -422,6 +438,13 @@ span{
 }
 .cardHeader{
   margin-block: 1em;
+}
+.cardHeaderMain{
+  color: var(--primary);
+  text-align: center;
+  margin-top: 2em;
+  font-size: 26px;
+  font-weight: bold;
 }
 .cardHeader h2{
   font-size: 32px;
@@ -459,6 +482,11 @@ li + li{
   color: var(--primary);
   border: 1px solid var(--primary);
 }
+.myCards{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
 
 /* Request PickUp */
 .pickupHeader{
@@ -488,6 +516,7 @@ li + li{
   background: var(--footer);
   color: var(--secondary);
   padding:1em  2em;
+  margin: 2em auto;
 }
 .subInput{
   width: 70%;

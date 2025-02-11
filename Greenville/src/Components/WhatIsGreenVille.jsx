@@ -1,3 +1,7 @@
+import { img4 } from "../assets";
+import { img2 } from "../assets";
+import { img3 } from "../assets";
+
 
 export default function WhatIsGreenville() {
   return (
@@ -17,16 +21,19 @@ export default function WhatIsGreenville() {
       </p>
       </div>
       <div className="statContainer">
-      <div className="Stats">
-        <img src="..\assets\icons\Vector-1-removebg-preview.png" alt="globe"/>
+      <div className="stats">
+        <img src={img4} alt="trash" className="statIcon"/>
+        <h2>280,000</h2>
         <p>Collected Yearly</p>
       </div>
-      <div>
-        <img src="" alt="globe"/>
+      <div className="stats">
+        <img src={img2} alt="globe"  className="statIcon"/>
+        <h2>280,000</h2>
         <p>Collected Yearly</p>
       </div>
-      <div>
-        <img src="" alt="globe"/>
+      <div className="stats">
+        <img src={img3} alt="globe"  className="statIcon"/>
+        <h2>280,000</h2>
         <p>Collected Yearly</p>
       </div>
       </div>
