@@ -8,12 +8,12 @@ export default function PremiumCard(){
         <p>Free plan for all users</p>
       </div>
       <ul className="custom-check-list">
-        <li>Customized waste pickup schedule</li>
-        <li>Recycling Rewards Trackingr</li>
-        <li>Analytics Dashboard</li>
-        <li>Increased Detty Token Multipliers</li>
-        <li>Exclusive Eco-Discounts</li>
-        <li>Priority Customer Support</li>
+        <li><i class="fa-regular fa-circle-check" className="tick"/>Customized waste pickup schedule</li>
+        <li><i class="fa-regular fa-circle-check" className="tick"/>Recycling Rewards Trackingr</li>
+        <li><i class="fa-regular fa-circle-check" className="tick"/>Analytics Dashboard</li>
+        <li><i class="fa-regular fa-circle-check" className="tick"/>Increased Detty Token Multipliers</li>
+        <li><i class="fa-regular fa-circle-check" className="tick"/>Exclusive Eco-Discounts</li>
+        <li><i class="fa-regular fa-circle-check" className="tick"/>Priority Customer Support</li>
       </ul>
       <button className="cardButton premiumBtn">Get Started</button>
     </div>

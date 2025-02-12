@@ -8,15 +8,15 @@ export default function OurService(){
         <div className='serviceContainer'>
             <div className='service'> 
                 <img src={img5} alt="industry" className="icons"/>
-                <h3>Industrial Waste Management</h3>
+                <h3 className='servText'>Industrial Waste Management</h3>
             </div>
             <div className='service'>
                 <img src={img6} alt="commercial building" className="icons"/>
-                <h3>Commercial Waste Management</h3>
+                <h3 className='servText'>Commercial Waste Management</h3>
             </div>
             <div className='service'>
                 <img src={img7} alt="Residential building" className="icons"/>
-                <h3>Residential Waste Management</h3>
+                <h3 className='servText'>Residential Waste Management</h3>
             </div>
         </div>
         </>

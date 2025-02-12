@@ -8,12 +8,12 @@ export default function BusinessCard(){
         <p>Free plan for all users</p>
       </div>
       <ul className="custom-check-list">
-        <li>Business Profile Creation</li>
-        <li>Dedicated Account Manager</li>
-        <li>Bulk Pickup Scheduling</li>
-        <li>Waste Volume Analytics</li>
-        <li>CSR Visibility Boost</li>
-        <li>Custom Detty Token Incentives</li>
+        <li><i class="fa-regular fa-circle-check"/>Business Profile Creation</li>
+        <li><i class="fa-regular fa-circle-check"/>Dedicated Account Manager</li>
+        <li><i class="fa-regular fa-circle-check"/>Bulk Pickup Scheduling</li>
+        <li><i class="fa-regular fa-circle-check"/>Waste Volume Analytics</li>
+        <li><i class="fa-regular fa-circle-check"/>CSR Visibility Boost</li>
+        <li><i class="fa-regular fa-circle-check"/>Custom Detty Token Incentives</li>
       </ul>
       <button className="cardButton">Get Started</button>
     </div>

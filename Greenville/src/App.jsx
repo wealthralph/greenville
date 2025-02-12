@@ -12,21 +12,26 @@ import OurServices from './Components/OurServices'
 import FAQ from './Components/FAQ'
 import Footer from './Components/Footer'
 import CardPlans from './Components/CardPlans'
+import PickUp from './Components/PickUp'
+import PremiumCard from './Components/PremiumCard'
+
 function App() {
 
 
   return (
     <>
-     <HeroSection />
-     <WhatIsGreenville />
-     <AreasWeCover />
-     <OurServices />
-     <CardPlans />
-     <Subscribe />
+     {/* <HeroSection /> */}
+     {/* <WhatIsGreenville /> */}
+     {/* <AreasWeCover /> */}
+     {/* <OurServices /> */}
+     {/* <CardPlans /> */}
+     <PickUp />
+     {/* <PremiumCard /> */}
+     {/* <Subscribe />
      <FAQ />
-     <Footer />
-    {/* <SignUp />
-    <SignIn />
+     <Footer /> */}
+    {/* <SignUp /> */}
+    {/* <SignIn />
     <RequestPickup />
     <ForgotPassword />
     <ResetPassword /> */}
