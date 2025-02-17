@@ -631,6 +631,78 @@ li + li{
   font-size: 0.9rem;
   color: #6b7280;
 }
+/*HamburgerMenu*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; 
+}
+
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.menu.show {
+  display: flex;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #2d6a4f; 
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2d6a4f; 
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-buttons button:hover {
+  background-color: #1e4c3a; 
+}
+
 /*Footer*/
 .footer {
   background-color: #2d6a4f;
@@ -644,7 +716,7 @@ li + li{
 }
 
 .footer_link:hover {
-  color: #f4a261; 
+  color: #2d6a4f; 
 }
 .footer_section {
   margin-bottom: 20px;
@@ -682,8 +754,10 @@ li + li{
 }
 
 .footer_social-link:hover {
-  color: #f4a261; 
+  color: #2d6a4f; 
 }
+
+
 
 /* Animation */
 /* @keyframes fades-slide-down {
