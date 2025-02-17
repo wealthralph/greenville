@@ -1,7 +1,9 @@
+
+
 export default function Areas(){
     return(
         <>
-        <div className="areaContainer">
+         <div className="areaContainer">
         <h1 className="areaHeader">Areas we cover</h1>
             <div className="firstRow">
             <div className="ikeja">

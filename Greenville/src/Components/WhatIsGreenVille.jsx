@@ -1,10 +1,14 @@
+import { img4 } from "../assets";
+import { img2 } from "../assets";
+import { img3 } from "../assets";
+
 
 export default function WhatIsGreenville() {
   return (
     <>
     <div className="whatIsGreenville">
-      <h1 className="wigHeader">What is Greenville?</h1>
-      <p className="wigParagraph">
+      <h1 className="wigHeader pop-up">What is Greenville?</h1>
+      <p className="wigParagraph pop-up">
         Greenville is an innovative waste management app designed to transform
         the way Lagos tackles waste disposal. Our mission is to create a
         cleaner, healthier, and more sustainable Lagos by harnessing the power
@@ -16,17 +20,20 @@ export default function WhatIsGreenville() {
         sustainable Lagos!
       </p>
       </div>
-      <div className="statContainer">
-      <div className="Stats">
-        <img src="..\assets\icons\Vector-1-removebg-preview.png" alt="globe"/>
+      <div className="statContainer pop-up">
+      <div className="stats">
+        <img src={img4} alt="trash" className="statIcon"/>
+        <h2 className="numb">280,000</h2>
         <p>Collected Yearly</p>
       </div>
-      <div>
-        <img src="" alt="globe"/>
+      <div className="stats">
+        <img src={img2} alt="globe"  className="statIcon"/>
+        <h2 className="numb">280,000</h2>
         <p>Collected Yearly</p>
       </div>
-      <div>
-        <img src="" alt="globe"/>
+      <div className="stats">
+        <img src={img3} alt="globe"  className="statIcon"/>
+        <h2 className="numb">280,000</h2>
         <p>Collected Yearly</p>
       </div>
       </div>

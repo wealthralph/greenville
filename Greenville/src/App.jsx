@@ -1,30 +1,40 @@
-import './App.css'
-
-import HeroSection from './Components/HeroSection'
-import WhatIsGreenville from './Components/WhatIsGreenVille'
-import AreasWeCover from './Components/AreasWeCover'
-import OurService from './Components/OurServices'
-import SubscriptionCards from './Components/SubcriptionCards'
-import FreeCard from './FreeCard'
-import PremiumCard from './PremiumCard'
-import PickUp from './PickUp'
+import './App.css' 
 import Subscribe from './Components/Subscribe'
+import RequestPickup from './Components/RequestPickup'
+import SignUp from './Components/SignUp'
+import WhatIsGreenville from './Components/WhatIsGreenVille'
+import SignIn from './Components/SignIn'
+import ForgotPassword from './Components/ForgotPassword'
+import ResetPassword from './Components/ResetPassword'
+import HeroSection from './Components/HeroSection'
+import AreasWeCover from './Components/AreasWeCover'
+import OurServices from './Components/OurServices'
+import FAQ from './Components/FAQ'
+import Footer from './Components/Footer'
+import CardPlans from './Components/CardPlans'
+import PickUp from './Components/PickUp'
+import PremiumCard from './Components/PremiumCard'
+
 function App() {
 
 
   return (
     <>
-
-   {/* <HeroSection /> */}
-   {/* <WhatIsGreenville /> */}
-   {/* <AreasWeCover /> */}
-  {/* <OurService /> */}
-  {/* <SubscriptionCards /> */}
-{/* <FreeCard /> */}
-{/* <PremiumCard /> */}
-{/* <PickUp /> */}
-<Subscribe />
-
+     {/* <HeroSection /> */}
+     {/* <WhatIsGreenville /> */}
+     {/* <AreasWeCover /> */}
+     {/* <OurServices /> */}
+     {/* <CardPlans /> */}
+     <PickUp />
+     {/* <PremiumCard /> */}
+     {/* <Subscribe />
+     <FAQ />
+     <Footer /> */}
+    {/* <SignUp /> */}
+    {/* <SignIn />
+    <RequestPickup />
+    <ForgotPassword />
+    <ResetPassword /> */}
     </>
   )
 }
