@@ -648,7 +648,7 @@ li + li{
 }
 
 .footer_link:hover {
-  color: #f4a261; 
+  color: #2d6a4f; 
 }
 .footer_section {
   margin-bottom: 20px;
@@ -686,8 +686,10 @@ li + li{
 }
 
 .footer_social-link:hover {
-  color: #f4a261; 
+  color: #2d6a4f; 
 }
+
+
 
 /* Animation */
 /* @keyframes fades-slide-down {
