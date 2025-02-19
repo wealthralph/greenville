@@ -579,7 +579,9 @@ li + li{
   font-weight: medium;
   margin-block:0.5em;
 }
+
 /*FAQ*/
+
 .faq-container {
   max-width: 400px;
   margin: 0 auto;
@@ -631,9 +633,11 @@ li + li{
   font-size: 0.9rem;
   color: #6b7280;
 }
-/*Footer*/
+
+/*Footer Section*/
+
 .footer {
-  background-color: #2d6a4f;
+  background-color: var(--footer);
   color: white; 
   padding: 30px 0;
 }

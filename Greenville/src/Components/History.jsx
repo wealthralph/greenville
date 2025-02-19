@@ -1,4 +1,7 @@
-export default function History(address,time){
+export default function History(address,time,completed){
+  if (completed) {
+    return  <li>{address} ✅</li>;
+  } <li>{address}  </li>
 
     return(
         <>

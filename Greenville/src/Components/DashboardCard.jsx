@@ -1,5 +1,5 @@
 import { useState } from "react"
-export default function DashboardCard(fullName){
+export default function DashboardCard({fullName}){
      const [tokens, setTokens] = useState(0);
         () => setTokens(tokens + 10)
     return (

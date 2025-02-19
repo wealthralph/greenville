@@ -14,18 +14,21 @@ import Footer from './Components/Footer'
 import CardPlans from './Components/CardPlans'
 import PickUp from './Components/PickUp'
 import PremiumCard from './Components/PremiumCard'
-
+import Dashboard from './Components/Dashboard'
+import Chart from './Components/Chart'
+import Barchart from './Components/Barchart'
+import UsePayment from './Components/UsePayment'
 function App() {
 
 
   return (
     <>
-     {/* <HeroSection /> */}
-     {/* <WhatIsGreenville /> */}
-     {/* <AreasWeCover /> */}
-     {/* <OurServices /> */}
-     {/* <CardPlans /> */}
-     <PickUp />
+     {/* <HeroSection />
+     <WhatIsGreenville />
+     <AreasWeCover />
+     <OurServices />
+     <CardPlans />
+     <PickUp /> */}
      {/* <PremiumCard /> */}
      {/* <Subscribe />
      <FAQ />
@@ -35,6 +38,10 @@ function App() {
     <RequestPickup />
     <ForgotPassword />
     <ResetPassword /> */}
+    {/* <Dashboard /> */}
+    <UsePayment />
+    {/* <Chart />
+    <Barchart /> */}
     </>
   )
 }

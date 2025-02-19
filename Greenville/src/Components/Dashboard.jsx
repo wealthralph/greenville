@@ -3,16 +3,17 @@ import DashboardCard from './DashboardCard'
 import TotalPickup from './TotalPickup'
 import MissedCollection from './MissedCollection'
 import History from './History'
-
-export default function Dashboard(name,tokens,fullName,pickUps,missed){
+import Barchart from './Barchart'
+export default function Dashboard({name,tokens,fullName,pickUps,missed}){
     return (
         <>
       <Greetings name={'Elo'} />
-      <DashboardCard tokens={tokens}
-      fullname={fullName} />
-      <TotalPickup pickUps={pickUps} />
-      <MissedCollection missed={missed}/>
-      <History />
+      <DashboardCard fullName={'Ezeaneche Elochukwu'} 
+      tokens={0} />
+     <TotalPickup pickUps={0} />
+      <MissedCollection missed={0}/>
+      <Barchart />
+      {/* <History /> */}
         <button className='createPickup' formAction='post'>+</button>
         </>
     )

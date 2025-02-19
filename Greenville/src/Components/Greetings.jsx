@@ -1,7 +1,7 @@
-export default function Greetings(name){
+export default function Greetings({name}){
     return(
         <>
-        <h2>Hello {name}</h2>
+        <h2 className="">Hello {name}</h2>
         </>
     )
 }
