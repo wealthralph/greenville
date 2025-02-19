@@ -63,13 +63,14 @@ import {
   
   export default function App() {
     return (
+      <div className="chart_con">
       <ResponsiveContainer width={"100%"} height={200}>
         <BarChart
           data={data}
           margin={{
             top: 5,
             right: 30,
-            left: 20,
+            left: 0,
             bottom: 5,
           }}
         >
@@ -90,6 +91,7 @@ import {
           /> */}
         </BarChart>
       </ResponsiveContainer>
+      </div>
     );
   }
   
