@@ -8,6 +8,7 @@
   padding: 0px;
 }
 
+
 :root {
   font-family: "Montserrat", serif;
   line-height: 1.5;
@@ -686,7 +687,7 @@ li + li {
 /* Dashboard section */
 
 /* Greetings */
-.greetings_header{
+.greetings_header {
   font-size: 22px;
   font-weight: bold;
   padding-inline: 1em;
@@ -706,22 +707,22 @@ li + li {
   border-radius: 15px;
   margin-bottom: 1em;
 }
-.dashboard_title{
+.dashboard_title {
   font-size: 26px;
   font-weight: bold;
   padding: 0.3em;
 }
-.dashboard_balance{
+.dashboard_balance {
   font-size: 14px;
   font-weight: light;
-  padding-inline: .6em;
+  padding-inline: 0.6em;
 }
-.ecotokens{
+.ecotokens {
   font-size: 22px;
   font-weight: medium;
   padding-inline: 0.6em;
 }
-.pee{
+.pee {
   letter-spacing: 10px;
   text-align: center;
   padding-inline: 0.6em;
@@ -731,14 +732,14 @@ li + li {
 
 /* Meter */
 
-.tracker_content{
+.tracker_content {
   width: 352px;
   border: 1px solid #c5c5c5;
   border-radius: 10px;
   padding: 1em;
   margin: 0 auto;
 }
-.meter{
+.meter {
   width: 100%;
 }
 progress::-webkit-progress-value {
@@ -752,68 +753,162 @@ progress::-webkit-progress-bar {
 }
 
 /* pickup stats */
-.totalpickup_con{
+.totalpickup_con {
   width: 150px;
   margin: 0 auto;
   border: 1px solid #c5c5c5;
   border-radius: 10px;
   padding: 0.5em;
 }
-.totalpickup_header{
-  font-size:18px ;
+.totalpickup_header {
+  font-size: 18px;
   font-weight: medium;
   text-align: center;
 }
-.totalpickup_value{
+.totalpickup_value {
   text-align: center;
   font-size: 26px;
   font-weight: bold;
 }
-.missed_con{
+.missed_con {
   width: 150px;
   margin: 0 auto;
   border: 1px solid #c5c5c5;
   border-radius: 10px;
   padding: 0.5em;
 }
-.missed_header{
-  font-size:18px ;
+.missed_header {
+  font-size: 18px;
   font-weight: medium;
   text-align: center;
 }
-.missed_value{
+.missed_value {
   text-align: center;
   font-size: 26px;
   font-weight: bold;
 }
-.pickup_stats{
+.pickup_stats {
   display: flex;
   flex-direction: row;
   gap: 1em;
   width: 90%;
-  margin:0 auto;
+  margin: 0 auto;
   margin-top: 1em;
 }
 
 /* Barchart */
-.chart_con{
+.chart_con {
   width: 100%;
   margin: 0 auto;
   margin-top: 2em;
   text-align: left;
 }
 /* dashboard button */
-.createPickup{
+.createPickup {
   border-radius: 100%;
   padding: 1em;
   position: fixed;
-z-index: 1;
-bottom: 40px;
-right: 40px;
-color: white;
+  z-index: 1;
+  bottom: 40px;
+  right: 40px;
+  color: white;
+  font-weight: bold;
+  background: var(--primary);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.new_req {
+  font-size: 50px;
+  text-align: center;
 }
 
+/* History section */
+.history_header{
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+.history-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
 
+.add-pickup {
+  background-color: #00bf63;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.history-item {
+  background: var(--secondary);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 0px;
+  text-align: left;
+  border-bottom: 1px solid #c5c5c5;
+}
+.history-item:hover{
+  background: #f4f4f4;
+  margin-bottom: 0.5em;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 95%;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.modal-content button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.modal-content .cancel {
+  background: red;
+  color: var(--secondary);
+}
+
+.modal-content button[type="submit"] {
+  background: var(--primary);
+  color: var(--secondary);
+}
 
 /* Animation */
 /* @keyframes fades-slide-down {

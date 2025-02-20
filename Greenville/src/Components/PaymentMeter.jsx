@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const PaymentMeter = () => {
-  const maxPayment = 500;
+  const maxPayment = 1000;
   const [progress, setProgress] = useState(100);
 
   const handlePayment = () => {
     setProgress((prevProgress) => {
-      let newProgress = prevProgress + 50;
+      let newProgress = prevProgress + 100;
       if (newProgress >= maxPayment) {
         alert("You just got a reward! Keeping it green Pays 👍 ");
         alert("Keeping it green pays");
@@ -21,12 +21,12 @@ const PaymentMeter = () => {
       <progress className="meter" id="meter" max={maxPayment} value={progress} />
       <div className="sub-text">
       <p>
-      <span className="progress">{progress}</span>/<span className="goal">500 </span>
+      <span className="progress">{progress}</span>/<span className="goal">1000 </span>
        Tokens to next reward
       </p>
       
       </div>
-      <button className="donate-button" onClick={handlePayment}>Donate</button>
+      {/* <button className="donate-button" onClick={handlePayment}>Donate</button> */}
     </div>
   );
 };

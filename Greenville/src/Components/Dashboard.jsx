@@ -4,7 +4,8 @@ import Barchart from "./Barchart"
 import PickupStats from "./PickupStats";
 import PaymentMeter from './PaymentMeter'
 import HamburgerMenu from "./HamburgerMenu";
-
+import History from "./History";
+// import FloatingButton from "./FloatingRoundButton";
 export default function Dashboard() {
   return (
     <>
@@ -14,9 +15,8 @@ export default function Dashboard() {
       <PaymentMeter />
       <PickupStats />
       <Barchart />
-      <button className="createPickup" type="button">
-        +
-      </button>
+      <History />
+   
     </>
   );
 }
