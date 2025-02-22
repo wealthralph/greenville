@@ -1,11 +1,14 @@
+import {useState} from "react";
 export default function HamburgerMenu() {
   return (
     <nav className="navbar">
       {/* Hamburger Icon */}
-      <button className="hamburger">☰</button>
+      <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </button>
 
       {/* Mobile Menu */}
-      <div className="menu show">
+      <div className={`menu ${isOpen ? "show" : "hide"}`}>
         <ul className="menu-list">
           <li>
             <a href="#" className="menu-link">

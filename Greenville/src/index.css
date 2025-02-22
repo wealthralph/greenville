@@ -666,7 +666,10 @@ li + li {
 }
 
 .menu.show {
-  display: flex;
+  display: block;
+}
+.menu.hide{
+  display:none;
 }
 
 .menu-list {
