@@ -1,19 +1,22 @@
-import Greetings from './Greetings'
-import DashboardCard from './DashboardCard'
-import TotalPickup from './TotalPickup'
-import MissedCollection from './MissedCollection'
-import History from './History'
-
-export default function Dashboard(name,tokens,fullName,pickUps,missed){
-    return (
-        <>
-      <Greetings name={'Elo'} />
-      <DashboardCard tokens={tokens}
-      fullname={fullName} />
-      <TotalPickup pickUps={pickUps} />
-      <MissedCollection missed={missed}/>
+import Greetings from "./Greetings"
+import DashboardCard from "./DashboardCard"
+import Barchart from "./Barchart"
+import PickupStats from "./PickupStats";
+import PaymentMeter from './PaymentMeter'
+import HamburgerMenu from "./HamburgerMenu";
+import History from "./History";
+// import FloatingButton from "./FloatingRoundButton";
+export default function Dashboard() {
+  return (
+    <>
+    {/* <HamburgerMenu /> */}
+      <Greetings name={"Elo"} />
+      <DashboardCard />
+      <PaymentMeter />
+      <PickupStats />
+      <Barchart />
       <History />
-        <button className='createPickup' formAction='post'>+</button>
-        </>
-    )
+   
+    </>
+  );
 }
