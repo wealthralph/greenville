@@ -1,6 +1,6 @@
-import { img4 } from "../assets";
-import { img2 } from "../assets";
-import { img3 } from "../assets";
+import { img4 } from "../../assets";
+import { img2 } from "../../assets";
+import { img3 } from "../../assets";
 
 
 export default function WhatIsGreenville() {

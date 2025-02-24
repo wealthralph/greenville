@@ -1,6 +1,6 @@
-import {img5} from '../assets'
-import {img6} from '../assets'
-import {img7} from '../assets'
+import {img5} from '../../assets'
+import {img6} from '../../assets'
+import {img7} from '../../assets'
 export default function OurService(){
     return(
         <>

@@ -17,10 +17,10 @@ export default function SignUp() {
     setEmail(e.target.value);
   };
   const handlePassword = (e) => {
-    setEmail(e.target.value);
+    setPassword(e.target.value);
   };
   const handleConfirmPassword = (e) => {
-    setEmail(e.target.value);
+    setConfirmPassword(e.target.value);
   };
 
   return (

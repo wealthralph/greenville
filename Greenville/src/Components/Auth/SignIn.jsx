@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+import HamburgerMenu from "../HamburgerMenu";
 export default function SignIn() {
   return (
     <>
+        <HamburgerMenu />
     <h1>Ecowaste Sign In</h1>
       <form>
         <label className="label">
@@ -16,11 +19,11 @@ export default function SignIn() {
             required
           />
         </label>
-        <button>Sign In</button>
-        <a>Forgot Password?</a>
+        <Link to="/Sign In"><button>Sign In</button></Link>
+        <Link to="/Forgot Password" >Forgot Password?</Link>
       </form>
       <p>
-        New here? <span>Sign Up</span>
+        New here? <Link to="/Sign Up">Sign Up</Link>
       </p>
     </>
   );

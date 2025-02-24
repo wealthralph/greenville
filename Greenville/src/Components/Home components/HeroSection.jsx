@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export default function HeroSection(){
     return(
@@ -7,7 +7,7 @@ export default function HeroSection(){
             
             <div className="heroItems">
         <h1 className="heroText ">Together we can help develope a new waste habit</h1>
-        <button className="heroBtn ">Sign Up</button>
+       <Link to="/Sign Up"><button className="heroBtn ">Sign Up</button></Link> 
         </div>
     
         </div>

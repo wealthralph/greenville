@@ -45,8 +45,15 @@ a {
 a:hover {
   color: var(--primary);
 }
-.pop-up {
-  animation: pop-up 0.6s ease-out forwards;
+/* Hamburger */
+.navBar{
+  display: flex;
+  gap: 16px;
+  margin-right:auto ;
+}
+.nav_btns{
+  display: flex;
+  gap: 16px;
 }
 
 /* Form CSS */

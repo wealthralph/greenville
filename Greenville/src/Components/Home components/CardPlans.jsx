@@ -1,6 +1,6 @@
-import FreeCard from "./FreeCard";
-import PremiumCard from "./PremiumCard";
-import BusinessCard from "./BusinessCard";
+import FreeCard from "../FreeCard";
+import PremiumCard from "../PremiumCard";
+import BusinessCard from "../BusinessCard";
 
 export default function Cards(){
     return(
