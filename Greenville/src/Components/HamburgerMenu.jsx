@@ -1,13 +1,13 @@
-import { NavLink } from "react-router-dom";
-
 export default function HamburgerMenu() {
   return (
     <nav className="navbar">
       {/* Hamburger Icon */}
-      <button className="hamburger">☰</button>
+      <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </button>
 
       {/* Mobile Menu */}
-      {/* <div className="menu show">
+      <div className="menu show">
         <ul className="menu-list">
           <li>
             <a href="#" className="menu-link">
