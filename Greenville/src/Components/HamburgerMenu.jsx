@@ -1,7 +1,12 @@
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
+
 export default function HamburgerMenu() {
+ 
+
   return (
     <nav className="navbar">
-      {/* Hamburger Icon */}
+       {/* Hamburger Icon */}
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </button>
@@ -34,14 +39,14 @@ export default function HamburgerMenu() {
           <button className="signup">Sign Up</button>
           <button className="signin">Sign In</button>
         </div>
-      </div> */}
-      <NavLink to='/' className={({ isActive }) => (isActive ? "active" : "")} >Home</NavLink>
+      </div> 
+      {/* <NavLink to='/' className={({ isActive }) => (isActive ? "active" : "")} >Home</NavLink>
       <NavLink to='/Dashboard' className={({ isActive }) => (isActive ? "active" : "")} >Dashboard</NavLink>
       <NavLink to='/About' className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
       <div className="nav_btns">
         <NavLink to="/Sign In" ><button>Login</button></NavLink>
         <NavLink to="/Sign Up" ><button>Sign Up</button></NavLink>
-      </div>
+      </div> */}
     </nav>
   );
 }

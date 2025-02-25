@@ -1,5 +1,5 @@
 import './App.css' 
-import HamburgerMenu from './Components/HamburgerMenu';
+// import HamburgerMenu from './Components/HamburgerMenu';
 import Dashboard from './Components/Dashboard'
 import SignUp from "./Components/Auth/SignUp"
 import SignIn from "./Components/Auth/SignIn"
@@ -8,6 +8,7 @@ import ForgotPassword from "./Components/Auth/ForgotPassword"
 import Page404 from './Components/Page404';
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import NavBar from './Components/NavBar'
 
 
 
@@ -17,8 +18,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    
-    <Routes> 
+     <NavBar />
+    {/* <Routes> 
 
       <Route path='/' element={<Home />} />
       <Route path='/dashboard' element={<Dashboard />} />
@@ -26,8 +27,9 @@ function App() {
       <Route path='/Sign In' element={<SignIn />} />
       <Route path='/Forgot Password' element={<ForgotPassword />} />
       <Route path="*" element={<Page404 />}/>
-    </Routes>
+    </Routes> */}
     </BrowserRouter>
+   
     </>
   )
 }

@@ -58,6 +58,11 @@ a:hover {
   display: flex;
   gap: 16px;
 }
+/* NavBar */
+.logo{
+  margin: 0 auto;
+  width: 200px;
+}
 
 /* Form CSS */
 
@@ -692,7 +697,7 @@ li + li {
 }
 
 .menu-link:hover {
-  color: var(--menu-main); 
+  color: var(--primary); 
 }
 
 .menu-buttons {
@@ -705,7 +710,7 @@ li + li {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: var(--menu-main); 
+  background-color: var(--primary); 
   color:var(--background);
   font-size: 1rem;
   cursor: pointer;
