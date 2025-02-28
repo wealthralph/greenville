@@ -1,5 +1,5 @@
 import './App.css' 
-// import HamburgerMenu from './Components/HamburgerMenu';
+//import HamburgerMenu from './Components/HamburgerMenu';
 import Dashboard from './Components/Dashboard'
 import SignUp from "./Components/Auth/SignUp"
 import SignIn from "./Components/Auth/SignIn"
@@ -19,7 +19,7 @@ function App() {
     <>
     <BrowserRouter>
      <NavBar />
-    {/* <Routes> 
+    {/*<Routes> 
 
       <Route path='/' element={<Home />} />
       <Route path='/dashboard' element={<Dashboard />} />
@@ -27,7 +27,7 @@ function App() {
       <Route path='/Sign In' element={<SignIn />} />
       <Route path='/Forgot Password' element={<ForgotPassword />} />
       <Route path="*" element={<Page404 />}/>
-    </Routes> */}
+    </Routes>*/}
     </BrowserRouter>
    
     </>

@@ -48,20 +48,82 @@ a {
 a:hover {
   color: var(--primary);
 }
-/* Hamburger */
-.navBar{
+/*Hamburger*/
+.navbar {
+  position: relative;
   display: flex;
-  gap: 16px;
-  margin-right:auto ;
+  align-items: center;
+  padding: 10px;
+  background: var(--menu-link);
+  color:var(--secondary);
 }
-.nav_btns{
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu {
+  position: absolute;
+  top: 50px; 
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  width: 200px;
+}
+
+.menu.show {
   display: flex;
-  gap: 16px;
 }
-/* NavBar */
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.menu-buttons .signup {
+  background: var(--secondary);
+border: 2px solid green;
+  border-radius: 5px;
+ display: block;
+  margin: 0 auto; 
+  text-align: center;
+  color:var(--primary)
+  
+}
+.menu-buttons .signin {
+  background: var(--primary);
+border: 2px solid green;
+  border-radius: 5px;
+ display: block;
+  margin: 0 auto; 
+  text-align: center;
+  color:var(--secondary);
+  
+}
+
 .logo{
   margin: 0 auto;
-  width: 200px;
+  width: 300px;
 }
 
 /* Form CSS */
