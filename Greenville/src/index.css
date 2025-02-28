@@ -63,14 +63,14 @@ a:hover {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: white;
+  color: var(--secondary);
 }
 
 .menu {
   position: absolute;
   top: 50px; 
   left: 0;
-  background: white;
+  background: var(--background);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px;
