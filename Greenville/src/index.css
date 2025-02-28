@@ -48,8 +48,88 @@ a {
 a:hover {
   color: var(--primary);
 }
+<<<<<<< HEAD
 
 
+=======
+/*Hamburger*/
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: var(--menu-link);
+  color:var(--secondary);
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+.menu {
+  position: absolute;
+  top: 50px; 
+  left: 0;
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  width: 200px;
+}
+
+.menu.show {
+  display: flex;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.menu-buttons .signup {
+  background: var(--secondary);
+border: 2px solid green;
+  border-radius: 5px;
+ display: block;
+  margin: 0 auto; 
+  text-align: center;
+  color:var(--primary)
+  
+}
+.menu-buttons .signin {
+  background: var(--primary);
+border: 2px solid green;
+  border-radius: 5px;
+ display: block;
+  margin: 0 auto; 
+  text-align: center;
+  color:var(--secondary);
+  
+}
+
+.logo{
+  margin: 0 auto;
+  width: 300px;
+}
+>>>>>>> b44b866d5b272e23f7c722f778f63cb37ce4b075
 
 /* Form CSS */
 

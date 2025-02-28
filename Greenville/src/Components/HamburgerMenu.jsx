@@ -2,14 +2,17 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 export default function HamburgerMenu() {
- 
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar">
- 
+       {/* Hamburger Icon */}
+      <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </button>
 
       {/* Mobile Menu */}
-      {/* <div className="menu show">
+      <div className="menu show">
         <ul className="menu-list">
           <li>
             <a href="#" className="menu-link">
@@ -50,9 +53,7 @@ export default function HamburgerMenu() {
       <div className="nav_btns">
         <NavLink to="/Sign In" ><button>Login</button></NavLink>
         <NavLink to="/Sign Up" ><button>Sign Up</button></NavLink>
-      </div>
-      </nav>
-      </div>
-    </nav> */}
+      </div> */}
+    </nav>
   );
-}
+}*/
