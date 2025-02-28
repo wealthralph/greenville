@@ -10,7 +10,6 @@ import HamburgerMenu from "./HamburgerMenu"
 export default function Home(){
     return(
         <>
-            <HamburgerMenu />
         <HeroSection />
         <WhatIsGreenville />
         <AreasWeCover />

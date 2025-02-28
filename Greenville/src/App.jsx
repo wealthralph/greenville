@@ -18,8 +18,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
-     <NavBar />
-    {/* <Routes> 
+    <NavBar />
+    <Routes> 
 
       <Route path='/' element={<Home />} />
       <Route path='/dashboard' element={<Dashboard />} />
@@ -27,7 +27,7 @@ function App() {
       <Route path='/Sign In' element={<SignIn />} />
       <Route path='/Forgot Password' element={<ForgotPassword />} />
       <Route path="*" element={<Page404 />}/>
-    </Routes> */}
+    </Routes>
     </BrowserRouter>
    
     </>

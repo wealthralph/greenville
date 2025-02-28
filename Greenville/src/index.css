@@ -48,21 +48,8 @@ a {
 a:hover {
   color: var(--primary);
 }
-/* Hamburger */
-.navBar{
-  display: flex;
-  gap: 16px;
-  margin-right:auto ;
-}
-.nav_btns{
-  display: flex;
-  gap: 16px;
-}
-/* NavBar */
-.logo{
-  margin: 0 auto;
-  width: 200px;
-}
+
+
 
 /* Form CSS */
 
@@ -644,9 +631,50 @@ li + li {
   color: var(--text);
 }
 
-/*Footer Section*/
 
-/*HamburgerMenu*/
+
+/*HamburgerMenu/Nav section*/
+.nav_btns{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.menu_new{
+  display: flex;
+  flex-direction: column;
+  gap: 50;
+}
+.menu_new a{
+  color: var(--text);
+}
+.menu_new a:hover{
+  color: var(--primary);
+}
+.main_nav{
+  display: flex;
+  flex-direction: column;
+  gap: 50;
+  z-index: 1;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+a + a{
+  margin-top: 1em;
+}
+/* NavBar */
+.navigation{
+  display: flex;
+}
+.logo{
+  margin: 0 auto;
+  width: 150px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -664,7 +692,7 @@ li + li {
 }
 
 .menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: var(--background);
@@ -720,6 +748,9 @@ li + li {
 .menu-buttons button:hover {
   background-color: var(--hover); 
 }
+/* end of nav */
+
+
 
 /*Footer*/
 .footer {

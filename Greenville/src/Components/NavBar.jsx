@@ -3,7 +3,7 @@ import { Logo } from "../assets";
 import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
-    <nav>
+    <nav className="navigation">
       <HamburgerMenu />
 
       <div className="logo">
