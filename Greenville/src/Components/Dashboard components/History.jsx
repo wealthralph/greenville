@@ -4,8 +4,12 @@ export default function History() {
   const [history, setHistory] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [pickupDetails, setPickupDetails] = useState({
+    name: "",
+    phone: "",
     location: "",
     wasteType: "",
+    date: "",
+    instructions: "",
   });
 
   // Handle opening/closing modal
@@ -25,7 +29,7 @@ export default function History() {
   const handleAddPickup = (e) => {
     e.preventDefault();
 
-    if (!pickupDetails.location || !pickupDetails.wasteType) {
+    if (!pickupDetails.name || !pickupDetails.phone || !pickupDetails.location || !pickupDetails.wasteType || !pickupDetails.date) {
       alert("Please fill in all fields.");
       return;
     }
@@ -38,7 +42,14 @@ export default function History() {
     };
 
     setHistory([newEntry, ...history]);
-    setPickupDetails({ address: "", wasteType: "" }); // Reset form
+    setPickupDetails({
+      name: "",
+      phone: "",
+      location: "",
+      wasteType: "",
+      date: "",
+      instructions: "",
+    });
     closeModal(); // Close modal after submission
   };
 
@@ -72,6 +83,26 @@ export default function History() {
           <div className="modal-content">
             <h2>Request Waste Pickup</h2>
             <form onSubmit={handleAddPickup} className="request_form">
+            <label>
+                Full Name:
+                <input
+                  type="text"
+                  name="name"
+                  value={pickupDetails.name}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+              <label>
+                Phone Number:
+                <input
+                  type="tel"
+                  name="phone"
+                  value={pickupDetails.phone}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
               <label>
                 Location:
                 <input
@@ -88,12 +119,36 @@ export default function History() {
               </label>
               <label>
                 Waste Type:
-                <input
-                  type="text"
+                <select
                   name="wasteType"
                   value={pickupDetails.wasteType}
                   onChange={handleInputChange}
                   required
+                >
+                  <option value="">Select Type</option>
+                  <option value="organic">Organic</option>
+                  <option value="plastic">Plastic</option>
+                  <option value="electronic">Electronic</option>
+                  <option value="hazardous">Hazardous</option>
+                </select>
+              </label>
+              <label>
+                Preferred Date & Time:
+                <input
+                  type="datetime-local"
+                  name="date"
+                  value={pickupDetails.date}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+
+              <label>
+                Special Instructions (Optional):
+                <textarea
+                  name="instructions"
+                  value={pickupDetails.instructions}
+                  onChange={handleInputChange}
                 />
               </label>
               <button type="submit">Submit Request</button>
@@ -104,6 +159,7 @@ export default function History() {
           </div>
         </div>
       )}
+      
     </div>
   );
 }

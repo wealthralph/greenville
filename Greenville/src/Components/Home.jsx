@@ -5,7 +5,7 @@ import OurServices from "./Home components/OurServices"
 import CardPlans from "./Home components/CardPlans"
 import FAQ from "./Home components/FAQ"
 import Footer from "./Home components/Footer"
-import HamburgerMenu from "./HamburgerMenu"
+
 
 export default function Home(){
     return(

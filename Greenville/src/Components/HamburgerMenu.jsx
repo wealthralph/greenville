@@ -6,54 +6,73 @@ export default function HamburgerMenu() {
 
   return (
     <nav className="navbar">
-       {/* Hamburger Icon */}
+  
+
+      {/* Mobile Menu */}
+      <nav className="navbar">
+      {/* Hamburger Icon */}
+    
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        ☰
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
       </button>
 
       {/* Mobile Menu */}
-      <div className="menu show">
+      <div className={`menu ${isOpen ? "show" : "hide"}`}>
         <ul className="menu-list">
           <li>
-            <a href="#" className="menu-link">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "active menu-link" : "menu-link"
+              }
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="menu-link">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "active menu-link" : "menu-link"
+              }
+            >
               About
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="menu-link">
+            <NavLink
+              to="/faqs"
+              className={({ isActive }) =>
+                isActive ? "active menu-link" : "menu-link"
+              }
+            >
               FAQs
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="menu-link">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "active menu-link" : "menu-link"
+              }
+            >
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
         <div className="menu-buttons">
-          <button className="signup">Sign Up</button>
-          <button className="signin">Sign In</button>
+          <NavLink to="/Sign up">
+            <button className="menu_btn_one ">Sign Up</button>
+          </NavLink>
+          <NavLink to="/Sign In">
+            <button className="menu_btn_two">Sign In</button>
+          </NavLink>
         </div>
-      </div>  */}
-      <div className="menu_new">
-              {/* Hamburger Icon */}
-      {/* <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        ☰
-      </button>
-      <nav className="main_nav">
-      <NavLink to='/' className={({ isActive }) => (isActive ? "active" : "")} >Home</NavLink>
-      <NavLink to='/Dashboard' className={({ isActive }) => (isActive ? "active" : "")} >Dashboard</NavLink>
-      <NavLink to='/About' className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
-      
-      <div className="nav_btns">
-        <NavLink to="/Sign In" ><button>Login</button></NavLink>
-        <NavLink to="/Sign Up" ><button>Sign Up</button></NavLink>
-      </div> */}
+      </div>
+    </nav>
+     
     </nav>
   );
-}*/
+}
