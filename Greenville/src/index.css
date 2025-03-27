@@ -16,10 +16,11 @@
   color-scheme: light dark;
   color: var(--text);
 
-  --primary: #00bf63;
+  --primary: #1b5b33;
   --secondary: #ffffff;
   --text: #222222;
   --sub-text: #555658;
+  --primary-variant: #C0EBCA;
 
   --footer: #1b5b33;
 
@@ -36,7 +37,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  scale: 1.2;
+  scale: 1.1;
 }
 a {
   font-weight: 500;
@@ -66,7 +67,7 @@ input:hover {
 input,
 select {
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
   height: 48px;
   padding: 10px 15px;
@@ -128,39 +129,37 @@ textarea {
   font-size: 18px;
 }
 /* Sign In */
-.signin_con{
- 
+.signin_con {
   padding-inline: 1em;
 }
-.signin_form{
+.signin_form {
   display: flex;
   flex-direction: column;
-  
 }
-.signin_header{
+.signin_header {
   font-size: 26px;
   font-weight: bold;
   text-align: center;
   color: var(--primary);
 }
-.signin_btns{
+.signin_btns {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 1em;
 }
-.signin_btn{
+.signin_btn {
   width: 100%;
   background: var(--primary);
   color: var(--secondary);
   padding: 1em;
   border-radius: 8px;
 }
-.fp{
+.fp {
   text-align: center;
   margin-block: 0.5em;
 }
-.nh{
+.nh {
   text-align: center;
 }
 
@@ -169,12 +168,12 @@ textarea {
   color: var(--primary);
   font-size: 26px;
   font-weight: bold;
- margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 .signUpForm {
   text-align: left;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .signUpContainer {
@@ -182,6 +181,8 @@ textarea {
   display: flex;
   gap: 0.3em;
   flex-direction: column;
+  background: #fbfbfb;
+  padding: 1em;
 }
 .signUpbtns {
   width: 100%;
@@ -279,9 +280,17 @@ span {
   margin: 0 auto;
   font-size: 2.5rem;
   overflow: hidden;
-  border-right: 4px solid white; /* Cursor effect */
+  /* border-right: 2px solid white; Cursor effect */
   white-space: wrap;
-  width: 0;
+  width: 100%;
+  /* animation: typing 6s steps(2000, end) forwards, blink 0.7s infinite; */
+}
+.heroPara{
+  width:100%;
+  color: white;
+  font-size: 16px;
+  margin: 0 auto;
+  border-right: 2px solid white; /* Cursor effect */
   animation: typing 6s steps(2000, end) forwards, blink 0.7s infinite;
 }
 .heroBtn {
@@ -340,7 +349,7 @@ span {
 
 /* Areas We Cover */
 .areaHeader {
-  color: var(--secondary);
+  color: var(--footer);
   font-size: 26px;
   font-weight: bold;
   text-align: center;
@@ -348,7 +357,7 @@ span {
   margin-top: 1em;
 }
 .areaContainer {
-  background: linear-gradient(to right, var(--primary), var(--footer));
+  background: var(--primary-variant);
   margin-bottom: 1em;
   padding-block: 1em;
   display: flex;
@@ -561,7 +570,11 @@ li + li {
   flex-direction: column;
   gap: 2em;
 }
-
+.cardContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 /* Request PickUp */
 .pickupHeader {
   color: var(--primary);
@@ -593,32 +606,49 @@ li + li {
 
 /* Subscribe Email */
 .subscribeCon {
-  background: var(--footer);
-  color: var(--secondary);
+  /* background: var(--footer); */
+  color: var(--text);
   padding: 1em 2em;
   margin: 2em auto;
 }
-.subInput {
-  width: 70%;
+
+.anticipationText {
+  max-width: 215px;
   margin: 0 auto;
+}
+.subSecHeader {
+  font-size: 18px;
+  font-weight: medium;
+  margin-block: 0.5em;
+  font-weight: bold;
+}
+.subSecParagraph {
+  font-size: 16px;
+}
+.subInput {
+  width: 100%;
+  margin: 1em auto;
   justify-content: center;
   background: var(--secondary);
   color: var(--sub-text);
 }
 .subBtn {
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
   background: var(--primary);
   padding: 0.6em 1em;
   text-align: center;
+  color: white;
   border-radius: 6px;
 }
-.subSecHeader {
-  font-size: 20px;
-  font-weight: medium;
-  margin-block: 0.5em;
+.anticipateTop {
+  display: flex;
 }
-
+.anticipateForm {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
 /*FAQ*/
 
 .faq-container {
@@ -808,7 +838,7 @@ a + a {
 }
 
 .logo {
-  margin-inline: 0 ;
+  margin-inline: 0;
   width: 120px;
 }
 /* end of nav */
@@ -1117,104 +1147,103 @@ progress::-webkit-progress-bar {
 } */
 
 @keyframes Bounce-in {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(250px);
-	}
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(250px);
+  }
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateY(65px);
-	}
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(65px);
+  }
 
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
 
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateY(28px);
-	}
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(28px);
+  }
 
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
 
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateY(8px);
-	}
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(8px);
+  }
 
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
 }
 @keyframes slide-left {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateX(-250px);
-	}
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(-250px);
+  }
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateX(0);
-	}
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateX(-68px);
-	}
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
 
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
 
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateX(-28px);
-	}
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
 
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
 
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateX(-8px);
-	}
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
+  }
 
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
 }
 @keyframes slide-in-top {
-	0% {
-		opacity: 0;
-		transform: translateY(-250px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-
-}@keyframes typing {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes typing {
   from {
     width: 0;
   }
@@ -1228,4 +1257,84 @@ progress::-webkit-progress-bar {
   50% {
     border-color: transparent;
   }
+}
+
+
+
+/* Web Screen */
+
+
+@media screen and (min-width: 700px) {
+
+  /* SignUp form */
+  .formContainer{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .leftSection{
+    width: 50%;
+  }
+  .signUpForm{
+    width: 50%;
+    padding: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  .title{
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+  .titleParagraph{
+    font-size: 16px;
+    max-width: 528px;
+  }
+
+
+  /* Card section */
+  .myCards{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .cardContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+  }
+
+  /* App Anticipation */
+
+
+  .anticipationText{
+    width: 465px;
+  }
+  .subSecHeader{
+    font-size: 28px;
+    width: 100%;
+  }
+  .subscribeCon{
+    display: flex;
+    margin: 4em auto;
+    width: 100%; 
+    justify-content: space-between;
+    border: 1px solid #e0e0e0;
+    background: var(--footer);
+    color: #ffffff;
+  }
+  .anticipateForm{
+    width: 300px;
+    margin-left: auto;
+    align-items: center;
+  }
+  .myMock{
+    width: 400px;
+    
+  }
+  .subSecParagraph{
+    width: 465px;
+  }
+  
+
 }

@@ -1,17 +1,18 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-export default function HeroSection(){
-    return(
-        
-        <div className="heroContainer">
-            
-            <div className="heroItems">
-        <h1 className="heroText ">Together we can help develope a new waste habit</h1>
-       <Link to="/Sign Up"><button className="heroBtn ">Sign Up</button></Link> 
-        </div>
-    
-        </div>
-        
-    
-    )
+export default function HeroSection() {
+  return (
+    <div className="heroContainer">
+      <div className="heroItems">
+        <h1 className="heroText ">CONNECTING LAGOS TO A CLEANER FUTURE</h1>
+        <p className="heroPara">
+          A cleaner Lagos, a cleaner you. let’s manage waste together. For a
+          cleaner Lagos and brighter future.
+        </p>
+        <Link to="/Sign Up">
+          <button className="heroBtn ">Get started</button>
+        </Link>
+      </div>
+    </div>
+  );
 }
