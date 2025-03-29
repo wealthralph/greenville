@@ -13,10 +13,10 @@ export default function Home(){
     return (
       <>
         <HeroSection />
-       <WhyTheyBelieveUs />
-       <WhatIsGreenville/>
-        <AreasWeCover />
+        <WhyTheyBelieveUs />
+        <WhatIsGreenville />
         <OurServices />
+        <AreasWeCover />
         <CardPlans />
         <Subscribe />
         <FAQ />
