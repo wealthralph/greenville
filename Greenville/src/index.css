@@ -365,7 +365,7 @@ input[type="email"]:focus {
 .greenvilleheader {
   font-size: 26px;
   line-height:33.6px;
-  color: white; 
+  color: var(--secondary);
   text-align: center;
   margin-bottom: 1em;
 }
@@ -442,8 +442,8 @@ font-weight:100;
 }
 
 .learnMore {
-  background-color: #1b5e20;
-  color: white;
+  background-color: var(--primary);
+  color:var(--secondary);
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
