@@ -25,6 +25,7 @@
   --footer: #1b5b33;
 
   --background: #f1f1f1;
+  --animation:#c9c9c9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -671,26 +672,42 @@ li + li {
 }
 
 .faq-item {
-  border: 1px solid var(--background);
-  border-radius: 8px;
+  border: 1px solid transparent;
+  border:none;
+  border-radius: 15px;
   padding: 12px;
   background-color: var(--secondary);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom:16px;
+
+}
+.faq-item[open] {
+  border: 1px solid var(--footer);
 }
 
+
 .faq-question {
-  width: 100%;
-  background: none;
-  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  font-weight:500;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text);
-  cursor: pointer;
+  list-style: none; 
+  position: relative;
+  color: var(--primary);
 }
-
+.faq-question::after {
+  content: '+';
+  font-size: 1.5em;
+ color:#f4f4f4;
+  margin-left: 10px;
+}
+details[open] > .faq-question::after {
+  content: '-';
+  color: var(--primary);
+}
 .icon {
   height: 20px;
   width: 20px;
@@ -700,7 +717,8 @@ li + li {
 .faq-answer {
   margin-top: 8px;
   font-size: 0.9rem;
-  color: var(--text);
+  color: var(--primary);
+  font-weight: 300;
 }
 
 /*HamburgerMenu/Nav section*/
@@ -1335,6 +1353,54 @@ progress::-webkit-progress-bar {
   .subSecParagraph{
     width: 465px;
   }
-  
+  /*FAQ*/
+
+ .faq-container {
+    min-width: 700px;
+  }
+
+  .faq-heading {
+    font-size: 30px;
+    font-weight: 400;
+    text-align:center;
+    line-height: 100%;
+  padding-bottom:40px;
+  padding-top:0px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+    font-weight:500;
+    line-height:100%;
+   
+  }
+
+  .faq-answer {
+    font-size: 14px;
+    font-weight:400px;
+  }
+  .details:has(.faq-answer){
+    border:2px solid green;
+  }
+  .faq-question::after {
+  content: '+';
+  font-size: 1.5em;
+ color:var(--animation);
+  margin-left: 10px;
+}
+.faq-item {
+  border: 1px solid transparent;
+  border:none;
+  border-radius: 15px;
+  padding: 12px;
+  background-color: var(--secondary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom:16px;
+
+}
+.faq-item[open] {
+  border: 1px solid var(--footer);
+}
+
 
 }

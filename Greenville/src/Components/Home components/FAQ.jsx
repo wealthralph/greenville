@@ -4,40 +4,49 @@ export default function FAQ() {
       <h2 className="faq-heading">Frequently Asked Questions</h2>
       <div className="faq-list">
         <details className="faq-item">
-          <summary className="faq-question">How do I co-own property?</summary>
+          <summary className="faq-question">
+            How do I schedule a waste pickup?
+          </summary>
           <p className="faq-answer">
-            By using EcoWaste, you can contribute to a cleaner environment,
-            reduce waste, and promote sustainable living practices.
+            Schedulinga waste pickup on our platform is as easy as 1-2-3:Sign
+            up, select your waste type, and schedule a pickup. It's that simple!
+            After signing up, you'll be able to request waste pickups for your
+            home or business, or even join a community cleanup initiative. Plus,
+            if you've already arranged offline pickups, you can easily manage
+            and track them on our platform for a more seamless experience.
+          </p>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-question">
+            How long does it take to schedule a waste pickup?
+          </summary>
+          <p className="faq-answer">
+            Waste pickup scheduling typically takes a few minutes through the
+            platform. Depending on your location and service provider,
+            collection can be arranged for the same day or within 24 and 48
+            hours.
+          </p>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-question">
+            How long does it cost to request a waste pickup?
+          </summary>
+          <p className="faq-answer">
+            The cost of requesting a waste pickup depends on factors such as
+            location, waste type, and service provider. Pricing details are
+            available on the platform, with options for one-time pickups or
+            subscription-based services.
           </p>
         </details>
 
         <details className="faq-item">
           <summary className="faq-question">
-            How long does it take to buy a property?
+            What is a "Community Tribe" in waste management?
           </summary>
           <p className="faq-answer">
-            Properties onboarded to Reezuto and subsequently verified can be
-            bought or sold within minutes. Reezuto provides the modern investor
-            with a faster way to buy or sell real estate assets and securities.
-          </p>
-        </details>
-
-        <details className="faq-item">
-          <summary className="faq-question">
-            How much do I need to become a "Co-Owner"?
-          </summary>
-          <p className="faq-answer">
-            For as little as NGN5000, you too can earn equity in choice
-            properties on Reezuto.
-          </p>
-        </details>
-
-        <details className="faq-item">
-          <summary className="faq-question">What is a "Tribe"?</summary>
-          <p className="faq-answer">
-            A "Tribe" is a group of friends, family members, or professional
-            colleagues onboard to Reezuto with the intent to jointly explore
-            opportunities and invest in real estate assets and securities.
+            A Community Tribe in waste management is a group of individuals or
+            organizations collaborating to promote waste reduction, recycling,
+            and sustainable disposal practices for a cleaner environment.
           </p>
         </details>
       </div>
