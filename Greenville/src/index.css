@@ -1376,7 +1376,7 @@ progress::-webkit-progress-bar {
   }
 
   .faq-answer {
-    font-size: 14px;
+    font-size: 12px;
     font-weight:400px;
   }
   .details:has(.faq-answer){
