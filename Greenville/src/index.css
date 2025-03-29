@@ -254,11 +254,22 @@ span {
 }
 
 /* Hero Section */
+
+.backdrop{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  border-radius: 8;
+}
 .heroContainer {
   background-image: url("./assets/images/radowan-nakif-rehan-qgXz4qXViCg-unsplash.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
+  display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -282,17 +293,20 @@ span {
   overflow: hidden;
   /* border-right: 2px solid white; Cursor effect */
   white-space: wrap;
-  width: 100%;
+  width: max-content;
   /* animation: typing 6s steps(2000, end) forwards, blink 0.7s infinite; */
 }
 .heroPara{
   width:100%;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 16px;
   margin: 0 auto;
   border-right: 2px solid white; /* Cursor effect */
-  animation: typing 6s steps(2000, end) forwards, blink 0.7s infinite;
+  animation: typing 5s steps(60, end) forwards, blink 0.7s infinite;
 }
+
 .heroBtn {
   width: 200px;
   padding: 10px 15px;
@@ -530,11 +544,11 @@ i {
   font-weight: bold;
 }
 .cardHeader h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 .cardHeader p {
-  font-size: 16px;
+  font-size: 14px;
 }
 li + li {
   margin-top: 2em;
@@ -552,6 +566,9 @@ li + li {
   font-weight: medium;
   margin-block: 1em;
 }
+.cardButton:hover{
+  scale: 1.1;
+}
 .premiumCard {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -565,6 +582,7 @@ li + li {
   color: var(--primary);
   border: 1px solid var(--primary);
 }
+
 .myCards {
   display: flex;
   flex-direction: column;
@@ -617,7 +635,7 @@ li + li {
   margin: 0 auto;
 }
 .subSecHeader {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: medium;
   margin-block: 0.5em;
   font-weight: bold;
@@ -1249,6 +1267,7 @@ progress::-webkit-progress-bar {
   }
   to {
     width: 100%;
+
   }
 }
 
@@ -1334,6 +1353,130 @@ progress::-webkit-progress-bar {
   }
   .subSecParagraph{
     width: 465px;
+  }
+
+  /* Arear we cover */
+
+
+  .areas{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  .areaHeader {
+    color: var(--footer);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .areaContainer {
+    background: var(--primary-variant);
+    margin-bottom: 1em;
+    padding-block: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .firstRow {
+    display: flex;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto; 
+    justify-content: space-around;
+  }
+  .ikeja {
+    width: 140px;
+    background-image: url(./assets/images/ikeja.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 3s 1 normal backwards;
+  }
+  .vi {
+    width: 140px;
+    background-image: url(./assets/images/VI.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 6s 1 normal backwards;
+  }
+  .jakande {
+    width: 140px;
+    background-image: url(./assets/images/jakande.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 9s 1 normal backwards;
+  }
+  .ikate {
+    width: 140px;
+    background-image: url(./assets/images/ikate.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 12s 1 normal backwards;
+  }
+  .ikoyi {
+    width: 140px;
+    background-image: url(./assets/images/ikoyi.jpeg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 15s 1 normal backwards;
+  }
+  .chevron {
+    width: 140px;
+    background-image: url(./assets/images/chevron.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 18s 1 normal backwards;
+  }
+  .secondRow {
+    display: flex;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .thirdRow {
+    display: flex;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto;
+    justify-content: space-around;
   }
   
 
