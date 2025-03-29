@@ -306,46 +306,120 @@ span {
   text-align: center;
   animation-delay: 0.8s;
 }
-
-/* What Is GreenVille section */
-
-.whatIsGreenville {
-  width: 90%;
-  margin: 2em auto;
-  animation: slide-left 5s linear 5s 1 normal backwards;
+/*Why They Believe Us*/
+.greenvillecontainer {
+  background-color: var(--primary); 
+  padding: 1em 0; 
 }
-.wigHeader {
+
+.greenvilleheader {
   font-size: 26px;
-  font-weight: bold;
-  color: var(--primary);
+  line-height:33.6px;
+  color: white; 
   text-align: center;
   margin-bottom: 1em;
-  animation-delay: 0.4s;
 }
-.wigParagraph {
+
+.greenvillestat {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  margin: 0 auto;
+  max-width: 1200px; 
+}
+
+.stat {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  flex: 1 1 30%; 
+  max-width: 400px; 
+  margin: 1em;
+  padding: 1em;
+  border-radius: 8px;
   text-align: center;
-  animation-delay: 0.8s;
 }
-.statContainer {
+
+.icon {
+  width: 70px !important;
+  height: 70px !important;
+  margin-bottom: 0.5em;
+}
+
+.numb {
+font-weight:100;
+ font-size: 12x !important;
+  color:var(--secondary);
+}
+.numb-desc{
+  font-size: 8px;
+  color:var(--secondary);
+  font-weight:100;
+}
+/*What is GreenVille*/
+.whatIsGreenville {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  width: 70%; 
+  max-width: 1200px;
+  margin: 2em auto;
+  gap: 2rem;
+}
+
+.textContainer {
+  flex: 1;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.textContainerHeader {
+  font-size: 30px;
+  color: var(--primary);
+}
+
+.whatIsGreenvilleDesc {
+  font-size: 16px; 
+  line-height: 1.6;
+  width: 100%;
+  color: #333;
+}
+
+.learnMore {
+  background-color: #1b5e20;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 60%; 
+  max-width: 250px;
+  margin: 10px auto;
+  display: block;
   text-align: center;
-  animation: myAnim 5s linear 4s 1 normal backwards;
 }
-.stats {
-  align-self: center;
-  margin: 1em auto;
-  width: 70%;
+
+.learnMore:hover {
+  background-color: #145a14;
 }
-.statIcon {
-  align-items: center;
-  width: 40px;
-  margin: 0 auto;
+
+.sustainableContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
-.numb {
-  font-size: 18px;
-  font-weight: bold;
+
+.sustainableIcon {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
 }
 
 /* Areas We Cover */
@@ -1402,5 +1476,56 @@ progress::-webkit-progress-bar {
   border: 1px solid var(--footer);
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet */
+  .whatIsGreenville {
+    width: 80%;
+  }
+
+  .textContainerHeader {
+    font-size: 26px;
+  }
+
+  .whatIsGreenvilleDesc {
+    font-size: 14px;
+  }
+
+  .learnMore {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .whatIsGreenville {
+    flex-direction: column; 
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .textContainer {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .sustainableContainer {
+    width: 100%;
+  }
+
+  .sustainableIcon {
+    max-width: 90%;
+  }
+
+  .textContainerHeader {
+    font-size: 22px;
+  }
+
+  .whatIsGreenvilleDesc {
+    font-size: 14px;
+  }
+
+  .learnMore {
+    width: 80%;
+  }
+}
 
 }

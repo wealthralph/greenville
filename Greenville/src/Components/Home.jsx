@@ -6,18 +6,21 @@ import CardPlans from "./Home components/CardPlans"
 import FAQ from "./Home components/FAQ"
 import Footer from "./Home components/Footer"
 import Subscribe from "./Home components/Subscribe"
+import WhyTheyBelieveUs from "./Home components/WhyTheyBelieveUs"
+
 
 export default function Home(){
-    return(
-        <>
+    return (
+      <>
         <HeroSection />
-        <WhatIsGreenville />
+       <WhyTheyBelieveUs />
+       <WhatIsGreenville/>
         <AreasWeCover />
         <OurServices />
         <CardPlans />
         <Subscribe />
         <FAQ />
         <Footer />
-        </>
-    )
+      </>
+    );
 }
