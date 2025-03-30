@@ -414,7 +414,7 @@ font-weight:100;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap; 
-  width: 70%; 
+  width: 90%; 
   max-width: 1200px;
   margin: 2em auto;
   gap: 2rem;
@@ -455,11 +455,6 @@ font-weight:100;
   display: block;
   text-align: center;
 }
-
-.learnMore:hover {
-  background-color: #145a14;
-}
-
 .sustainableContainer {
   flex: 1;
   display: flex;
@@ -777,7 +772,8 @@ li + li {
 /*FAQ*/
 
 .faq-container {
-  max-width: 400px;
+  width:90%;
+  max-width: 900px;
   margin: 0 auto;
   padding: 16px;
 }
@@ -1477,105 +1473,129 @@ progress::-webkit-progress-bar {
   .subSecParagraph{
     width: 465px;
   }
-  /*FAQ*/
 
- .faq-container {
-    min-width: 700px;
+  /* Arear we cover */
+
+
+  .areas{
+    display: flex;
+    justify-content: space-evenly;
+  
   }
-
-  .faq-heading {
-    font-size: 30px;
-    font-weight: 400;
-    text-align:center;
-    line-height: 100%;
-  padding-bottom:40px;
-  padding-top:0px;
-  }
-
-  .faq-question {
-    font-size: 14px;
-    font-weight:500;
-    line-height:100%;
-   
-  }
-
-  .faq-answer {
-    font-size: 12px;
-    font-weight:400px;
-  }
-  .details:has(.faq-answer){
-    border:2px solid green;
-  }
-  .faq-question::after {
-  content: '+';
-  font-size: 1.5em;
- color:var(--animation);
-  margin-left: 10px;
-}
-.faq-item {
-  border: 1px solid transparent;
-  border:none;
-  border-radius: 15px;
-  padding: 12px;
-  background-color: var(--secondary);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom:16px;
-
-}
-.faq-item[open] {
-  border: 1px solid var(--footer);
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) { /* Tablet */
-  .whatIsGreenville {
-    width: 80%;
-  }
-
-  .textContainerHeader {
+  .areaHeader {
+    color: var(--footer);
     font-size: 26px;
-  }
-
-  .whatIsGreenvilleDesc {
-    font-size: 14px;
-  }
-
-  .learnMore {
-    width: 70%;
-  }
-}
-
-@media (max-width: 768px) { /* Mobile */
-  .whatIsGreenville {
-    flex-direction: column; 
+    font-weight: bold;
     text-align: center;
-    gap: 1rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
-
-  .textContainer {
-    max-width: 100%;
+  .areaContainer {
+    background: var(--primary-variant);
+    margin-bottom: 1em;
+    padding-block: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .firstRow {
+    display: flex;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto; 
+    justify-content: space-around;
+  }
+  .ikeja {
+    width: 140px;
+    background-image: url(./assets/images/ikeja.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
     text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 3s 1 normal backwards;
   }
-
-  .sustainableContainer {
-    width: 100%;
+  .vi {
+    width: 140px;
+    background-image: url(./assets/images/VI.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 6s 1 normal backwards;
   }
-
-  .sustainableIcon {
-    max-width: 90%;
+  .jakande {
+    width: 140px;
+    background-image: url(./assets/images/jakande.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 9s 1 normal backwards;
   }
-
-  .textContainerHeader {
-    font-size: 22px;
+   .ikate {
+    width: 140px;
+    background-image: url(./assets/images/ikate.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 12s 1 normal backwards;
   }
-
-  .whatIsGreenvilleDesc {
-    font-size: 14px;
+  .ikoyi {
+    width: 140px;
+    background-image: url(./assets/images/ikoyi.jpeg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 15s 1 normal backwards;
   }
-
-  .learnMore {
-    width: 80%;
+  .chevron {
+    width: 140px;
+    background-image: url(./assets/images/chevron.jpg);
+    height: 140px;
+    background-size: cover;
+    border-radius: 8px;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    animation: slide-in-top 5s linear 18s 1 normal backwards;
   }
-}
-
+  .secondRow {
+    display: flex;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .thirdRow {
+    display: flex;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  
 }
