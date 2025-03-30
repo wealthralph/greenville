@@ -1559,8 +1559,6 @@ progress::-webkit-progress-bar {
   border: 1px solid var(--footer);
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) { /* Tablet */
   .whatIsGreenville {
     width: 80%;
   }
@@ -1572,6 +1570,7 @@ progress::-webkit-progress-bar {
     align-content: center;
     animation: slide-in-top 5s linear 12s 1 normal backwards;
   }
+  
   .ikoyi {
     width: 140px;
     background-image: url(./assets/images/ikoyi.jpeg);
@@ -1641,5 +1640,7 @@ progress::-webkit-progress-bar {
     order: 4;
     margin-left: 0;
   }
-}
+
+
+
 
