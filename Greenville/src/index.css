@@ -305,11 +305,22 @@ input[type="email"]:focus {
 
 
 /* Hero Section */
+
+.backdrop{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  border-radius: 8;
+}
 .heroContainer {
   background-image: url("./assets/images/radowan-nakif-rehan-qgXz4qXViCg-unsplash.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
+  display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -333,17 +344,20 @@ input[type="email"]:focus {
   overflow: hidden;
   /* border-right: 2px solid white; Cursor effect */
   white-space: wrap;
-  width: 100%;
+  width: max-content;
   /* animation: typing 6s steps(2000, end) forwards, blink 0.7s infinite; */
 }
 .heroPara{
   width:100%;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 16px;
   margin: 0 auto;
   border-right: 2px solid white; /* Cursor effect */
-  animation: typing 6s steps(2000, end) forwards, blink 0.7s infinite;
+  animation: typing 5s steps(60, end) forwards, blink 0.7s infinite;
 }
+
 .heroBtn {
   width: 200px;
   padding: 10px 15px;
@@ -650,11 +664,11 @@ i {
   font-weight: bold;
 }
 .cardHeader h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 .cardHeader p {
-  font-size: 16px;
+  font-size: 14px;
 }
 li + li {
   margin-top: 2em;
@@ -672,6 +686,9 @@ li + li {
   font-weight: medium;
   margin-block: 1em;
 }
+.cardButton:hover{
+  scale: 1.1;
+}
 .premiumCard {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -685,6 +702,7 @@ li + li {
   color: var(--primary);
   border: 1px solid var(--primary);
 }
+
 .myCards {
   display: flex;
   flex-direction: column;
@@ -737,7 +755,7 @@ li + li {
   margin: 0 auto;
 }
 .subSecHeader {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: medium;
   margin-block: 0.5em;
   font-weight: bold;
@@ -1387,6 +1405,7 @@ progress::-webkit-progress-bar {
   }
   to {
     width: 100%;
+
   }
 }
 
@@ -1518,39 +1537,33 @@ progress::-webkit-progress-bar {
     align-content: center;
     animation: slide-in-top 5s linear 3s 1 normal backwards;
   }
-  .vi {
-    width: 140px;
-    background-image: url(./assets/images/VI.jpg);
-    height: 140px;
-    background-size: cover;
-    border-radius: 8px;
-    color: var(--secondary);
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-    animation: slide-in-top 5s linear 6s 1 normal backwards;
+  .faq-question::after {
+  content: '+';
+  font-size: 1.5em;
+ color:var(--animation);
+  margin-left: 10px;
+}
+.faq-item {
+  border: 1px solid transparent;
+  border:none;
+  border-radius: 15px;
+  padding: 12px;
+  background-color: var(--secondary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom:16px;
+
+}
+.faq-item[open] {
+  border: 1px solid var(--footer);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet */
+  .whatIsGreenville {
+    width: 80%;
   }
-  .jakande {
-    width: 140px;
-    background-image: url(./assets/images/jakande.jpg);
-    height: 140px;
-    background-size: cover;
-    border-radius: 8px;
-    color: var(--secondary);
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-    animation: slide-in-top 5s linear 9s 1 normal backwards;
-  }
-   .ikate {
-    width: 140px;
-    background-image: url(./assets/images/ikate.jpg);
-    height: 140px;
-    background-size: cover;
-    border-radius: 8px;
-    color: var(--secondary);
+
+  .textContainerHeader {
     font-size: 26px;
     font-weight: bold;
     text-align: center;
@@ -1590,12 +1603,14 @@ progress::-webkit-progress-bar {
     margin: 0 auto;
     justify-content: space-around;
   }
-  .thirdRow {
-    display: flex;
-    width: 90%;
-    padding: 1em;
-    margin: 0 auto;
-    justify-content: space-around;
+
+  .whatIsGreenvilleDesc {
+    font-size: 14px;
   }
-  
+
+  .learnMore {
+    width: 80%;
+  }
+}
+
 }
