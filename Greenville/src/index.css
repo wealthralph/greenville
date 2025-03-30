@@ -344,7 +344,7 @@ input[type="email"]:focus {
   overflow: hidden;
   /* border-right: 2px solid white; Cursor effect */
   white-space: wrap;
-  width: max-content;
+  width: 100%;
   /* animation: typing 6s steps(2000, end) forwards, blink 0.7s infinite; */
 }
 .heroPara{
@@ -470,9 +470,7 @@ font-weight:100;
   text-align: center;
 }
 
-.learnMore:hover {
-  background-color: #145a14;
-}
+
 
 .sustainableContainer {
   flex: 1;
@@ -1497,7 +1495,7 @@ progress::-webkit-progress-bar {
     width: 465px;
   }
 
-  /* Arear we cover */
+  /* Areas we cover */
 
 
   .areas{
