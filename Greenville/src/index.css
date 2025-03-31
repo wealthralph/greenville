@@ -1586,11 +1586,7 @@ progress::-webkit-progress-bar {
   border: 1px solid var(--footer);
 }
 
-  .whatIsGreenville {
-    width: 80%;
-  }
-
-  
+/*Areas We Cover*/  
   .ikoyi {
     width: 140px;
     background-image: url(./assets/images/ikoyi.jpeg);
