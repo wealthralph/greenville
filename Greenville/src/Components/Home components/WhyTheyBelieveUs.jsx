@@ -11,17 +11,17 @@ export default function WhyTheyBelieveUs() {
           <div className="greenvillestat">
             <div className="stat">
               <img src={globe} alt="Globe icon" className="icon" />
-              <h2 className="numb">25,300</h2>
+              <h2 className="numb">25,300 Tons</h2>
               <p className="numb-desc">Collected Yearly</p>
             </div>
             <div className="stat">
               <img src={truck} alt="Truck icon" className="icon" />
-              <h2 className="numb">25,300</h2>
+              <h2 className="numb">25,300 Tons</h2>
               <p className="numb-desc">Deliveries Made</p>
             </div>
             <div className="stat">
               <img src={trash} alt="Trash icon" className="icon" />
-              <h2 className="numb">25,300</h2>
+              <h2 className="numb">25,300 Tons</h2>
               <p className="numb-desc">Waste Recycled</p>
             </div>
           </div>
