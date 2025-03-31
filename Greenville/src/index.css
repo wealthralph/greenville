@@ -882,6 +882,7 @@ a + a {
   align-items: center;
   padding: 10px 20px;
   background-color: var(--secondary);
+  z-index: 1;
 }
 .menu {
   display: flex;
