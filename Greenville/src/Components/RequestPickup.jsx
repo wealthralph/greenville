@@ -1,11 +1,11 @@
 export default function RequestPickup(){
     return(
         <>
-        <h1>Request Waste Pick-up</h1>
-        <form>
+        <h1 className="requestHeader">Request Waste Pick-up</h1>
+        <form className="requestForm">
         <label className="label">
           Address
-          <input type="text" name="address" placeholder="Enter Address" required />
+          <input type="text" name="address" placeholder=" " required />
         </label>
         <label className="label">
           Phone Number
@@ -13,7 +13,7 @@ export default function RequestPickup(){
         </label>
         <label className="label">
           Email
-          <input type="email" name="Email" placeholder="Enter Email" required />
+          <input type="email" name="Email" placeholder=" " required />
         </label>
         <label className="label">Service Required
                         <select name="Reference" id="Reference">
@@ -29,8 +29,10 @@ export default function RequestPickup(){
 
         </textarea>
                     </label>
-        
-        
+                    <div className="requestButtons">
+                    <button className="requestCancle">Cancle</button>
+        <button className="requestDone" >Done</button>
+        </div>
         </form>
         </>
     )
