@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main {
+    background-color: #C9C9C9;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+    justify-content: space-between;
+}
+
+.main:hover {
+    background-color: #d3d3d3;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.bodydiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.submain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    max-width: 500px;
+}
+
+.inbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.inbodytext {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(28px, 5vw, 50px);
+    line-height: 1.2;
+    color: #1B5B33;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.bodysubtext {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 2.5vw, 18px);
+    line-height: 1.7;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 516px;
+}
+
+.inbodysubtext {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 2.5vw, 18px);
+    line-height: 1.7;
+    color: #222222;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trashBin {
+    width: 450px;
+    max-width: 750px;
+    margin-right: 40px;
+    height: 700px;
+    max-height: 300px;
+    object-fit: contain;
+    animation: float 3s ease-in-out infinite;
+    display: block;
+    z-index: 10;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.trashBin:hover {
+    transform: scale(1.05);
+}
+
+.learmore-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 252px;
+    background: #1B5B33;
+    border: 1px solid #1B5B33;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: clamp(14px, 2vw, 16px);
+    margin: 0 auto;
+}
+
+.learmore-btn:hover {
+    background-color: #50735d;
+}
+
+.servicecard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.serviceBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 307px;
+    min-height: 450px;
+    background: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.serviceBox:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+    width: 100%;
+    max-width: 127px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.serviceBox:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.serviceTitle {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.service-subHeader {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(15px, 2.5vw, 18px);
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.serviceinfo {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 16px);
+    color: #000000;
+    margin: 15px 0 25px;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 174px;
+    background: #FFFFFF;
+    border: 3px solid #1B5B33;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 16px);
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: #1B5B33;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+    .trashBin {
+        width: 300px;
+        max-width: 300px;
+        height: auto;
+        max-height: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bodydiv {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+    
+    .servicecard {
+        gap: 25px;
+    }
+
+    .service-icon {
+        max-width: 110px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .bodydiv {
+        flex-direction: column;
+    }
+    
+    .inbody {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .submain {
+        max-width: 100%;
+    }
+    
+    .trashBin {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        order: 2;
+    }
+    
+    .inbodytext {
+        order: 1;
+    }
+    
+    .inbodysubtext {
+        order: 3;
+    }
+    
+    .learmore-btn {
+        order: 4;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .servicecard {
+        gap: 20px;
+    }
+    
+    .serviceBox {
+        max-width: 280px;
+        min-height: 400px;
+        padding: 20px 15px;
+    }
+    
+    .inbodytext {
+        font-size: clamp(26px, 5vw, 40px);
+    }
+    
+    .button {
+        max-width: 150px;
+        padding: 10px 15px;
+    }
+    
+    .trashBin {
+        max-width: 220px;
+    }
+
+    .service-icon {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .bodydiv {
+        padding: 20px 15px;
+    }
+    
+    .trashBin {
+        max-width: 200px;
+    }
+    
+    .serviceBox {
+        min-height: 380px;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+    
+    .inbodytext {
+        font-size: clamp(24px, 5vw, 32px);
+        margin-bottom: 15px;
+    }
+    
+    .bodysubtext,
+    .inbodysubtext {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .trashBin {
+        max-width: 180px;
+    }
+    
+    .serviceBox {
+        min-height: 350px;
+        padding: 15px 10px;
+    }
+    
+    .learmore-btn {
+        max-width: 200px;
+        padding: 10px 20px;
+    }
+    
+    .button {
+        max-width: 130px;
+        padding: 8px 15px;
+    }
+    
+    .headerText {
+        padding: 15px 10px;
+    }
+
+    .service-icon {
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .trashBin {
+        max-width: 150px;
+    }
+    
+    .inbodytext {
+        font-size: 22px;
+    }
+    
+    .bodysubtext,
+    .inbodysubtext {
+        font-size: 14px;
+    }
+    
+    .serviceBox {
+        min-height: 320px;
+    }
+    
+    .serviceTitle {
+        font-size: 20px;
+    }
+    
+    .serviceinfo,
+    .service-subHeader {
+        font-size: 14px;
+    }
+
+    .service-icon {
+        max-width: 70px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
