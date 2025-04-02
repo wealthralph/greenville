@@ -22,7 +22,7 @@
   --primary-variant: #C0EBCA;
 
   --footer: #1b5b33;
-  background: #000;
+  
 
   --background: #f1f1f1;
   --animation:#c9c9c9;
@@ -48,7 +48,6 @@ a {
 a:hover {
   color: var(--primary);
 }
-
 /* Form CSS */
 
 .label {
@@ -74,6 +73,18 @@ select {
   padding: 10px 15px;
   transition: background-color 0.3s, border-color 0.3s;
 }
+
+
+@media (max-width: 480px) {
+  /* body {
+    background-color: lightgray;
+  } */
+  .leftSection{
+    display: none;
+  }
+}
+
+
 
 /* Request Pick-up Form */
 
@@ -165,6 +176,9 @@ textarea {
 }
 
 /* SignUp Form */
+.leftsection{
+  display: none;
+}
 .signUpHeader {
   color: var(--primary);
   font-size: 26px;
@@ -1451,6 +1465,7 @@ progress::-webkit-progress-bar {
   }
   .leftSection{
     width: 50%;
+    display: show;
   }
   .signUpForm{
     width: 50%;
