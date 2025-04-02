@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function HeroSection() {
   return (
     <div className="heroContainer">
-        <div className="backdrop">
+        {/* <div className="backdrop"> */}
       <div className="heroItems">
         <h1 className="heroText ">CONNECTING LAGOS TO A CLEANER FUTURE</h1>
         <p className="heroPara">
@@ -14,7 +14,7 @@ export default function HeroSection() {
           <button className="heroBtn ">Get started</button>
         </Link>
       </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

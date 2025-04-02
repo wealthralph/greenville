@@ -5,7 +5,6 @@
 *::before {
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px;
 }
 
 :root {
@@ -528,7 +527,7 @@ input[type="email"]:focus {
   font-weight: bold;
   text-align: center;
   align-content: center;
-  animation: slide-in-top 5s linear 3s 1 normal backwards;
+  /* animation: slide-in-top 5s linear 3s 1 normal backwards; */
 }
 .vi {
   width: 140px;
@@ -541,7 +540,7 @@ input[type="email"]:focus {
   font-weight: bold;
   text-align: center;
   align-content: center;
-  animation: slide-in-top 5s linear 6s 1 normal backwards;
+  /* animation: slide-in-top 5s linear 6s 1 normal backwards; */
 }
 .jakande {
   width: 140px;
@@ -554,7 +553,7 @@ input[type="email"]:focus {
   font-weight: bold;
   text-align: center;
   align-content: center;
-  animation: slide-in-top 5s linear 9s 1 normal backwards;
+  /* animation: slide-in-top 5s linear 9s 1 normal backwards; */
 }
 .ikate {
   width: 140px;
@@ -567,7 +566,7 @@ input[type="email"]:focus {
   font-weight: bold;
   text-align: center;
   align-content: center;
-  animation: slide-in-top 5s linear 12s 1 normal backwards;
+  /* animation: slide-in-top 5s linear 12s 1 normal backwards; */
 }
 .ikoyi {
   width: 140px;
@@ -580,7 +579,7 @@ input[type="email"]:focus {
   font-weight: bold;
   text-align: center;
   align-content: center;
-  animation: slide-in-top 5s linear 15s 1 normal backwards;
+  /* animation: slide-in-top 5s linear 15s 1 normal backwards; */
 }
 .chevron {
   width: 140px;
@@ -593,7 +592,7 @@ input[type="email"]:focus {
   font-weight: bold;
   text-align: center;
   align-content: center;
-  animation: slide-in-top 5s linear 18s 1 normal backwards;
+  /* animation: slide-in-top 5s linear 18s 1 normal backwards; */
 }
 .secondRow {
   display: flex;
@@ -809,7 +808,7 @@ li + li {
 }
 
 .faq-heading {
-  font-size: 38px;
+  font-size: 28px;
   font-weight: bold;
   color: var(--primary);
   margin-bottom: 1.5em;
@@ -830,7 +829,9 @@ li + li {
   background-color: var(--secondary);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-bottom:16px;
-
+}
+.faq-item:hover{
+  scale:1.1
 }
 .faq-item[open] {
   border: 1px solid var(--footer);
@@ -849,6 +850,9 @@ li + li {
   position: relative;
   color: var(--primary);
 }
+/* .faq-question:hover{
+  scale: 1.1;
+} */
 .faq-question::after {
   content: '+';
   font-size: 1.5em;
@@ -871,6 +875,7 @@ details[open] > .faq-question::after {
   color: var(--primary);
   font-weight: 300;
 }
+
 
 /*HamburgerMenu/Nav section*/
 
@@ -1549,7 +1554,7 @@ progress::-webkit-progress-bar {
     font-weight: bold;
     text-align: center;
     align-content: center;
-    animation: slide-in-top 5s linear 3s 1 normal backwards;
+    /* animation: slide-in-top 5s linear 3s 1 normal backwards; */
   }
   .secondRow {
     display: flex;
@@ -1599,7 +1604,7 @@ progress::-webkit-progress-bar {
     font-weight: bold;
     text-align: center;
     align-content: center;
-    animation: slide-in-top 5s linear 15s 1 normal backwards;
+    /* animation: slide-in-top 5s linear 15s 1 normal backwards; */
   }
   .chevron {
     width: 140px;
@@ -1612,7 +1617,7 @@ progress::-webkit-progress-bar {
     font-weight: bold;
     text-align: center;
     align-content: center;
-    animation: slide-in-top 5s linear 18s 1 normal backwards;
+    /* animation: slide-in-top 5s linear 18s 1 normal backwards; */
   }
   .secondRow {
     display: flex;
