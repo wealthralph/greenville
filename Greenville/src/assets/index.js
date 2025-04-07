@@ -10,7 +10,14 @@ import img9 from './images/background.png'
 import Logo from './images/logo.png'
 import Mock from './images/Mockup.png'
 import SignupImage from './images/signup.png'
+import ctrash from './images/ctrash.png'
+import ctruck from './images/ctruck.png'
+import cbuilding from './images/cbuilding.png'
 
+
+export {cbuilding} 
+export {ctruck}
+export {ctrash}
 export {img2}
 export {img3}
 export {img4}
@@ -22,5 +29,6 @@ export {img9}
 export {Logo}
 export {Mock}
 export {SignupImage}
+
 
 

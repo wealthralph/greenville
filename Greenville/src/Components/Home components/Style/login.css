@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  
+  input {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  .signin_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 40px;
+    position: relative;
+  }
+  
+  
+  .greencard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 528px;
+    margin-top: 70px;
+    z-index: 1;
+    visibility: visible; 
+  }
+  
+  .imagediv {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden; 
+  }
+  
+  #image {
+    width: 100%;
+    height: auto;
+    max-height: 352px;
+    display: block;
+  }
+  
+  .greentext {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+  
+  .greentext span {
+    color: #1B5B33;
+  }
+  
+  .greensubtext {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  
+  .logincard {
+    margin-top: 40px;
+    flex: 1;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    max-width: 450px;
+    width: 100%;
+    z-index: 2; 
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .label {
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  .signin_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .signin_btn, .login-btn {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 5px;
+  }
+  
+  .signin_btn {
+    border: 1px solid #1B5B33;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    color: #1B5B33;
+    padding: 5px;
+  }
+  
+  .signin_btn:hover {
+    background-color: #e6f0ea;
+  }
+  
+  .login-btn {
+    border: none;
+    background-color: #1B5B33;
+    color: white;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-btn:hover {
+    background-color: #144a29;
+  }
+  
+  .fp {
+    text-align: center;
+    color: #1B5B33;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .fp:hover {
+    text-decoration: underline;
+  }
+  
+  .nh {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .nh a {
+    color: #1B5B33;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nh a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Error message */
+  .error-message {
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 993px) {
+    .signin_con {
+      flex-direction: row;
+      gap: 60px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .signin_con {
+      padding: 30px 20px;
+      gap: 30px;
+    }
+    
+    .greentext {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .signin_con {
+      flex-direction: column;
+    }
+    
+    .greenville {
+      order: 1; 
+      margin: 40px auto 0;
+      text-align: center;
+      align-items: center;
+      display: flex; 
+    }
+    
+    .logincard {
+      order: 0; 
+      margin: 0 auto;
+      max-width: 90%;
+    }
+    
+    .greentext {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .signin_con {
+      padding: 20px 10px;
+    }
+    
+    .greencard{
+      visibility: hidden; 
+      
+    }
+    
+    #image {
+      height: auto;
+      min-height: auto;
+    }
+    
+    .greentext {
+      font-size: 28px;
+    }
+    
+    .greensubtext {
+      font-size: 14px;
+      display: none;
+    }
+    
+    .logincard {
+      padding: 25px 15px;
+      height: auto;
+      min-height: 400px;
+      border: 1px solid #e0e0e0;
+      position: absolute;
+      margin-top: 70px;
+    }
+  }

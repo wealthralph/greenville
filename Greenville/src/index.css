@@ -626,29 +626,154 @@ input[type="email"]:focus {
 
 /* Our Services */
 
-.serviceHeader {
+/* 
+.main {
+  padding: 50px 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+  justify-content: space-between;
+} */
+
+/* .main:hover {
+  background-color: #d3d3d3;
+} */
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   font-size: 26px;
-  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.serviceHeader{
   color: var(--primary);
-  margin: 1em auto;
-  text-align: center;
-}
-.icons {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-}
-.serviceContainer {
-  margin: 0 auto;
-}
-.service {
-  text-align: center;
-  margin-block: 3em;
-}
-.servText {
+  font-size: 48px;
   font-weight: bold;
-  width: 200px;
-  margin: 1em auto;
+}
+
+.servicecard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serviceBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 307px;
+  min-height: 450px;
+  background: #FFFFFF;
+  border: 1px solid #C9C9C9;
+  border-radius: 12px;
+  padding: 25px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.serviceBox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+  width: 100%;
+  max-width: 127px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.serviceBox:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.serviceTitle {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.service-subHeader {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(15px, 2.5vw, 18px);
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.serviceinfo {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(14px, 2vw, 16px);
+  color: #000000;
+  margin: 15px 0 25px;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 174px;
+  background: #FFFFFF;
+  border: 3px solid #1B5B33;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: clamp(14px, 2vw, 16px);
+  margin-top: auto;
+}
+
+.button:hover {
+  background-color: #1B5B33;
+  color: #FFFFFF;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 /* Subscription Cards */
@@ -892,20 +1017,102 @@ details[open] > .faq-question::after {
 }
 
 
-/*HamburgerMenu/Nav section*/
+/*Nav section*/
+
+
+
 
 a + a {
   margin-top: 1em;
 }
+
+
 .navigation {
   display: flex;
   position: sticky;
+  flex-direction: row;
   background: var(--secondary);
   width: 100%;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
+
+.simple-Nav {
+  display: flex;
+  align-items: center;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+}
+.navlinks li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navlinks li:hover {
+  color: #1B5B33;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+button {
+  border: 1px solid #1B5B33;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #1B5B33;
+  color: white;
+  transform: translateY(3px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* .signin {
+  background-color: white;
+  color: #1B5B33;
+}
+
+.signin:hover {
+  background-color: #1B5B33;
+  color: white;
+}
+
+.signout {
+  background-color: #1B5B33;
+  color: white;
+}
+
+.signout:hover {
+  background-color: #14472A;
+  transform: translateY(3px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+} */
+
+
+
+/* hamburger section */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -966,6 +1173,7 @@ a + a {
   flex-direction: column;
   color: var(--secondary);
   gap: 5px;
+  display: none;
 }
 .bar {
   width: 30px;
@@ -973,6 +1181,9 @@ a + a {
   background-color: black;
   transition: transform 0.3s, opacity 0.3s;
 }
+
+
+/* hamburger transform */
 
 /* Transform bars into an "X" when open */
 .bar.open:nth-child(1) {
@@ -1512,8 +1723,8 @@ progress::-webkit-progress-bar {
     width: 100%; 
     justify-content: space-between;
     border: 1px solid #e0e0e0;
-    background: var(--footer);
-    color: #ffffff;
+    /* background: var(--footer); */
+    color:var(--footer);
   }
   .anticipateForm{
     width: 300px;
@@ -1526,6 +1737,7 @@ progress::-webkit-progress-bar {
   }
   .subSecParagraph{
     width: 465px;
+    color: var(--text);
   }
 
   /* Areas we cover */
