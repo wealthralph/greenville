@@ -11,7 +11,7 @@ export default function NavBar() {
       <header>
         
          <Link to="/">
-          <img src={Logo} alt="logo" />
+          {/* <img src={Logo} alt="logo" /> */}
         </Link>
         
         <nav className="simple-Nav">
