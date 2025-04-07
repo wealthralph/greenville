@@ -33,9 +33,9 @@ export default function OurService(){
         },
       ]);
     return(
-        <>
-<div className="main">
-      <div className="headerText">
+        < >
+<div className="main" style={{background:"white"}}>
+      <div className="headerText"  >
         <h1 className="serviceHeader">Our Services</h1>
         <span className="service-subHeader">
           Connecting Lagos to a cleaner future
