@@ -13,8 +13,13 @@ import SignupImage from './images/signup.png'
 import ctrash from './images/ctrash.png'
 import ctruck from './images/ctruck.png'
 import cbuilding from './images/cbuilding.png'
+import NewLogo from './images/mylogo.png'
+import clogo from './images/clogo.png'
 
 
+
+
+export {clogo}
 export {cbuilding} 
 export {ctruck}
 export {ctrash}
@@ -29,6 +34,7 @@ export {img9}
 export {Logo}
 export {Mock}
 export {SignupImage}
+export {NewLogo}
 
 
 
