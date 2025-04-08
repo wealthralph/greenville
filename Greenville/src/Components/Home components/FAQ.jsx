@@ -1,7 +1,7 @@
 export default function FAQ() {
   return (
     <div className="faq-container">
-      <h2 className="faq-heading">Frequently Asked Questions</h2>
+      <h2 className="faq-heading">Got Questions? We’ve Got Answers!</h2>
       <div className="faq-list">
         <details className="faq-item">
           <summary className="faq-question">

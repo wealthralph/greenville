@@ -1,8 +1,10 @@
 import HamburgerMenu from "./HamburgerMenu";
 import { Logo } from "../assets";
 import { Link } from "react-router-dom";
-
+import { clogo } from "../assets";
 import { useNavigate} from "react-router-dom";
+
+
 export default function NavBar() {
   const navigate = useNavigate();
   return (
@@ -11,7 +13,7 @@ export default function NavBar() {
       <header>
         
          <Link to="/">
-          {/* <img src={Logo} alt="logo" /> */}
+          <img src={clogo} alt="logo" />
         </Link>
         
         <nav className="simple-Nav">
