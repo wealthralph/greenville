@@ -43,7 +43,7 @@ export default function NavBar() {
         
         
        </div>
-       <HamburgerMenu className="hamburger"/>
+       {/* <HamburgerMenu className="hamburger"/> */}
        <h2 className="greenville">GREENVILLE</h2>
       </header>
       

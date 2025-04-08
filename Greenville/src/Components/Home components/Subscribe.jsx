@@ -11,7 +11,7 @@ export default function Subscribe() {
           <div className="phoneMock">
             <motion.img
               src={clogo}
-              alt="phone mock"
+              alt="logo"
               className="myMock"
               animate={{
                 rotate: 360, // Rotating 360 degrees
