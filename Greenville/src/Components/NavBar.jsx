@@ -11,7 +11,7 @@ export default function NavBar() {
       <header>
         
          <Link to="/">
-          {/* <img src={Logo} alt="logo" /> */}
+          <img src={Logo} className="logopic" alt="logo" />
         </Link>
         
         <nav className="simple-Nav">
@@ -33,15 +33,11 @@ export default function NavBar() {
 
 
        <div className="buttons">
-       <button onClick={() => navigate("/Sign in")}className="signin">Sign In</button>
+       <button onClick={() => navigate("/Sign in")}className="signin" >Sign In</button>
        <button  onClick={() => navigate("/Sign up")}  className="signout">Sign Up</button>
        </div>  
-       <div className="sidebar">
-      
-        
-        
-       </div>
-       <HamburgerMenu className="hamburger"/>
+       <div className="sidebar"></div>
+       <HamburgerMenu  className="hamburger"/>
        <h2 className="greenville">GREENVILLE</h2>
       </header>
       
