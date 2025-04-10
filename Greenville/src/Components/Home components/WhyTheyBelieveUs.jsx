@@ -25,7 +25,7 @@ export default function WhyTheyBelieveUs() {
           className="greenvilleheader"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeIn" }}
+          transition={{ duration: 3, ease: "easeIn" }}
         >
           Why they believe us
         </motion.h1>

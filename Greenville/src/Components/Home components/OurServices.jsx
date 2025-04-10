@@ -39,9 +39,9 @@ export default function OurService() {
   return (
     <div className="main" style={{ background: "white" }}>
       <div className="headerText">
-        <h1 className="serviceHeader">Our Services</h1>
+        <h1 className="serviceHeader">What We Offer</h1>
         <span className="service-subHeader">
-          Connecting Lagos to a cleaner future
+        Serving Lagos with innovation, sustainability, and care.
         </span>
       </div>
       <ul className="servicecard">

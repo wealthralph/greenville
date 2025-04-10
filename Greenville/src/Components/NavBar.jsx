@@ -3,7 +3,7 @@ import { Logo } from "../assets";
 import { Link } from "react-router-dom";
 import { clogo } from "../assets";
 import { useNavigate} from "react-router-dom";
-
+import { motion } from "framer-motion";
 
 export default function NavBar() {
   const navigate = useNavigate();
@@ -12,9 +12,19 @@ export default function NavBar() {
     
       <header>
         
-         <Link to="/">
-          <img src={clogo} alt="logo" />
-        </Link>
+        <Link to="/">
+  <motion.img
+    src={clogo}
+    alt="logo"
+    className="navlogo"
+    animate={{ rotate: 360 }}
+    transition={{
+      repeat: Infinity,
+      duration: 10,
+      ease: "linear"
+    }}
+  />
+</Link>
         
         <nav className="simple-Nav">
           <ul className="navlinks">
@@ -43,7 +53,7 @@ export default function NavBar() {
         
         
        </div>
-       {/* <HamburgerMenu className="hamburger"/> */}
+       <HamburgerMenu className="hamburger"/>
        <h2 className="greenville">GREENVILLE</h2>
       </header>
       
