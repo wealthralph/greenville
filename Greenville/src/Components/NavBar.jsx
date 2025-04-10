@@ -1,5 +1,4 @@
 import HamburgerMenu from "./HamburgerMenu";
-import { Logo } from "../assets";
 import { Link } from "react-router-dom";
 import { clogo } from "../assets";
 import { useNavigate} from "react-router-dom";
@@ -17,11 +16,14 @@ export default function NavBar() {
     src={clogo}
     alt="logo"
     className="navlogo"
-    animate={{ rotate: 360 }}
+    animate={{
+      rotate: 360, // Rotating 360 degrees
+    }}
     transition={{
-      repeat: Infinity,
-      duration: 10,
-      ease: "linear"
+      repeat: Infinity, // Infinite loop
+      repeatType: "loop", // Continuous loop
+      duration: 10, // Rotation speed, adjust as needed
+      ease: "linear", // Smooth continuous rotation
     }}
   />
 </Link>
