@@ -38,6 +38,7 @@ button {
   cursor: pointer;
   text-align: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 button:hover {
@@ -122,6 +123,26 @@ select {
   /* hero section */
   .herotext {
     font-size: 26px;
+  }
+
+  /* Areas we cover */
+  
+  .areaHeader {
+    color: var(--primary);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-inline: 1em;
+  }
+  .areaContainer {
+    background: var(--primary-variant);
+    margin-bottom: 1em;
+    padding-block: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 
   /* Subscribe */
@@ -641,6 +662,7 @@ input[type="email"]:focus {
   text-justify: inter-word;
   justify-content: flex-start;
   padding-bottom: 20px;
+  padding-top: 1em;
 }
 
 .sustainableContainer {
@@ -650,7 +672,7 @@ input[type="email"]:focus {
 .whatIsGreenvilleDesc,
 .learnMore {
   order: 3;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .sustainableIcon {
@@ -671,7 +693,6 @@ input[type="email"]:focus {
   cursor: pointer;
   align-self: flex-start;
   width: 100%;
-  margin: 10px auto 0;
   max-width: 350px;
 }
 
@@ -681,22 +702,7 @@ input[type="email"]:focus {
 }
 
 /* Areas We Cover */
-.areaHeader {
-  color: var(--primary);
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-.areaContainer {
-  background: var(--primary-variant);
-  margin-bottom: 1em;
-  padding-block: 1em;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
+
 .firstRow {
   display: flex;
   width: 90%;
@@ -801,6 +807,7 @@ input[type="email"]:focus {
   padding: 20px;
   font-size: 26px;
   text-align: center;
+  margin-top: 1em;
 }
 
 @keyframes float {
@@ -825,7 +832,7 @@ input[type="email"]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 16px;
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -842,7 +849,7 @@ input[type="email"]:focus {
   background: #ffffff;
   border: 1px solid #c9c9c9;
   border-radius: 12px;
-  padding: 25px 20px;
+  padding: 15px 20px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -856,7 +863,7 @@ input[type="email"]:focus {
   width: 100%;
   max-width: 127px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: transform 0.3s ease;
   display: block;
 }
@@ -871,7 +878,7 @@ input[type="email"]:focus {
   font-weight: 700;
   margin-bottom: 15px;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: #222222;
 }
 
 .service-subHeader {
@@ -1032,7 +1039,7 @@ li + li {
   /* background: var(--cardVariant); */
   color: var(--text);
   padding: 1em 2em;
-  margin: 1em auto;
+  margin: 3em auto;
   width: 100%;
 }
 .subSecHeader {
@@ -1103,6 +1110,7 @@ li + li {
   margin-bottom: 16px;
   width: 90%;
   margin-inline: auto;
+  transition: all 0.3s ease;
 }
 .faq-item:hover {
   scale: 1.1;
@@ -1564,7 +1572,7 @@ progress::-webkit-progress-bar {
   .areaContainer {
     background: var(--primary-variant);
     margin-bottom: 1em;
-    padding-block: 1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1636,7 +1644,7 @@ progress::-webkit-progress-bar {
     margin-inline: auto;
     width: 100%;
     justify-content: space-between;
-    border: 1px solid #e0e0e0;
+    /* border: 1px solid #e0e0e0; */
     background: white;
     color: var(--primary);
   }
