@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { clogo, Mock } from "../../assets";
+import { clogo } from "../../assets";
 
 export default function Subscribe() {
   return (
@@ -27,9 +27,9 @@ export default function Subscribe() {
             <h1 className="subSecHeader">
               Coming soon <br></br>Greenville Application
             </h1>
-            <p className="subSecParagraph">
+            {/* <p className="subSecParagraph">
             Imagine being able to request, track, and manage your waste pickups from your mobile phone... soon you'll be able to.
-            </p>
+            </p> */}
           </div>
 
           <div className="anticipateForm">
