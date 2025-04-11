@@ -2,7 +2,7 @@
 import AxiosInstance from './AxiosInstance';
 
 const SignUpApi = async (formData) => {
-  const response = await AxiosInstance.post('/signup', formData);
+  const response = await AxiosInstance.post('/users/register', formData);
 
   // Save token in localStorage (or use cookies)
   

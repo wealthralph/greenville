@@ -28,8 +28,7 @@ export default function Subscribe() {
               Coming soon <br></br>Greenville Application
             </h1>
             <p className="subSecParagraph">
-              Imagine being able to buy, sell and co-own real estate with your
-              friends and family from your mobile phone… soon you’ll be able to.
+            Imagine being able to request, track, and manage your waste pickups from your mobile phone... soon you'll be able to.
             </p>
           </div>
 

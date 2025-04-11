@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://staging.greenvillehub.com', // replace with your backend URL
+  baseURL: 'https://staging.greenvillehub.com/api', // replace with your backend URL
 });
 
 axiosInstance.interceptors.request.use((config) => {

@@ -7,10 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
   const [form, setForm] = useState({
-    name: "",
-    lastName: "",
+    firstname: "",
+    lastname: "",
     email: "",
     password: "",
+    phoneNumber:"",
   });
   const navigate = useNavigate();
   const { mutate, isPending, isError, error, isSuccess } = useMutation({
@@ -52,7 +53,7 @@ export default function SignUp() {
       </section>
       
     <div className="formContainer">
-      <form className="signUpForm" onSubmit={handleSubmit}>
+      <form className="signUpForm" onSubmit={handleSubmit} action="submit">
       
           <h1 className="signUpHeader">Create an Account</h1>
 
@@ -60,8 +61,8 @@ export default function SignUp() {
             First Name
             <input
               type="text"
-              name="name"
-              value={form.name}
+              name="firstname"
+              value={form.firstname}
               onChange={handleChange}
               required
             />
@@ -71,8 +72,8 @@ export default function SignUp() {
             Last Name
             <input
               type="text"
-              name="lastName"
-              value={form.lastName}
+              name="lastname"
+              value={form.lastname}
               onChange={handleChange}
               required
             />

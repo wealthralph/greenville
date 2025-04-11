@@ -56,7 +56,9 @@ export default function NavBar() {
         
        </div>
        <HamburgerMenu className="hamburger"/>
-       <h2 className="greenville">GREENVILLE</h2>
+      <h2 className="greenville">
+        <Link to='/'> GREENVILLE</Link>
+       </h2>
       </header>
       
     
