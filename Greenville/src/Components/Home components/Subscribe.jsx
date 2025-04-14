@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { clogo, Mock } from "../../assets";
+import { clogo } from "../../assets";
 
 export default function Subscribe() {
   return (

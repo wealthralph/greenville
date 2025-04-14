@@ -8,7 +8,7 @@ import img7 from './icons/skyscrapers.png'
 import img8 from './images/fun truck.png'
 import img9 from './images/background.png'
 import Logo from './images/logo.png'
-import Mock from './images/Mockup.png'
+import Mock from './images/mockup.png'
 import SignupImage from './images/signup.png'
 import ctrash from './images/ctrash.png'
 import ctruck from './images/ctruck.png'
@@ -19,22 +19,8 @@ import clogo from './images/clogo.png'
 
 
 
-export {clogo}
-export {cbuilding} 
-export {ctruck}
-export {ctrash}
-export {img2}
-export {img3}
-export {img4}
-export {img5}
-export {img6}
-export {img7}
-export {img8}
-export {img9}
-export {Logo}
-export {Mock}
-export {SignupImage}
-export {NewLogo}
+export {clogo,cbuilding,ctruck,ctrash,img2,img3,img4,img5,img6,img7,img8,img9,Logo,Mock,SignupImage,NewLogo}
+
 
 
 

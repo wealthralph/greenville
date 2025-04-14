@@ -747,6 +747,7 @@ input[type="email"]:focus {
   height: 140px;
   background-size: cover;
   border-radius: 8px;
+  opacity: 0.95;
   color: var(--secondary);
   font-size: 26px;
   font-weight: bold;
@@ -761,6 +762,7 @@ input[type="email"]:focus {
   border-radius: 8px;
   color: var(--secondary);
   font-size: 26px;
+  opacity: 1;
   font-weight: bold;
   text-align: center;
   align-content: center;
@@ -769,6 +771,7 @@ input[type="email"]:focus {
   width: 140px;
   background-image: url(./assets/images/jakande.jpg);
   height: 140px;
+  opacity: 0.95;
   background-size: cover;
   border-radius: 8px;
   color: var(--secondary);
@@ -786,6 +789,7 @@ input[type="email"]:focus {
   color: var(--secondary);
   font-size: 26px;
   font-weight: bold;
+  opacity: 0.95;
   text-align: center;
   align-content: center;
 }
@@ -793,6 +797,7 @@ input[type="email"]:focus {
   width: 140px;
   background-image: url(./assets/images/ikoyi.jpeg);
   height: 140px;
+  opacity: 0.95;
   background-size: cover;
   border-radius: 8px;
   color: var(--secondary);
@@ -811,6 +816,7 @@ input[type="email"]:focus {
   font-size: 26px;
   font-weight: bold;
   text-align: center;
+  opacity: 0.95;
   align-content: center;
 }
 .secondRow {
