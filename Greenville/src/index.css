@@ -47,7 +47,7 @@ button:hover {
 
 a {
   font-weight: 500;
-  color: var(--primary);
+  /* color: var(--primary); */
   text-decoration: inherit;
 }
 a:hover {
@@ -1283,10 +1283,30 @@ details[open] > .faq-question::after {
 
 /* Dashboard section */
 
+/* sidebar section */
+.sidebar_img{
+  max-width: 205px;
+  margin: 0 auto;
+}
+.sidebar_con{
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  height: 100vh;
+  padding: 1em 0;
+}
+.sidenav_list{
+  display: flex;
+  border-bottom: 1px solid #c9c9c9;
+  padding: 0px 10px;
+}
+
 /* Greetings */
 .greetings_header {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500;
   padding-inline: 1em;
   margin-block: 0.5em;
 }
@@ -1900,38 +1920,6 @@ header {
   z-index: 1001;
 }
 
-/* .sidebar.active {
-  left: 0;
-  display: block;
-}
-
-.sidebar .navlinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.sidebar .navlinks li {
-  margin: 15px 0;
-  color: white;
-  font-size: 18px;
-}
-
-.sidebar .buttons {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.sidebar button {
-  width: 90%;
-  margin: 10px 0;
-  padding: 10px;
-} */
 
 .greenville-sidebar {
   font-size: 1.9rem;
@@ -2017,7 +2005,7 @@ header {
   margin-inline: 0;
   width: 120px;
 }
-/* end of nav */
+
 
 .navbar {
   position: relative;
@@ -2045,14 +2033,6 @@ header {
   transition: transform 0.3s, opacity 0.3s;
 }
 
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: var(--secondary);
-  z-index: 1;
-} */
 .menu {
   display: flex;
   flex-direction: column;
@@ -2212,10 +2192,10 @@ header {
     font-size: 16px;
   }
 
-  .sidebar button {
+  /* .sidebar button {
     height: 35px;
     margin: 8px 0;
-  }
+  } */
 
   .greenville-sidebar {
     font-size: 1.5rem;
