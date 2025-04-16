@@ -5,6 +5,9 @@ import PickupStats from "../Components/Dashboard components/PickupStats"
 import Barchart from "../Components/Dashboard components/Barchart"
 import History from "../Components/Dashboard components/History"
 import Sidebar from "./Dashboard components/Sidebar"
+import Search from "./Dashboard components/Search"
+import UserProfile from "./Dashboard components/UserProfile"
+
 
 // import FloatingButton from "./FloatingRoundButton";
 export default function Dashboard() {
@@ -12,12 +15,14 @@ export default function Dashboard() {
     <>
       {/* <HamburgerMenu /> */}
       {/* <Greetings name={"Elo"} /> */}
+      <Search />
       {/* <DashboardCard /> */}
       <Sidebar/>
-      {/* <PaymentMeter />
+      <UserProfile />
+      <PaymentMeter />
       <PickupStats />
       <Barchart />
-      <History /> */}
+      <History />
     </>
   );
 }
