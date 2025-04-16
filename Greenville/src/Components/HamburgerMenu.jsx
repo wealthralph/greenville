@@ -6,10 +6,7 @@ export default function HamburgerMenu() {
 
   return (
     <nav className="navbar">
-  
-
-      {/* Mobile Menu */}
-      <nav className="navbar">
+        
       {/* Hamburger Icon */}
     
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
@@ -73,6 +70,6 @@ export default function HamburgerMenu() {
       </div>
     </nav>
      
-    </nav>
+    
   );
 }

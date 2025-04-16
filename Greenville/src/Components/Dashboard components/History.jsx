@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function History() {
   const [history, setHistory] = useState([]);
@@ -7,7 +8,7 @@ export default function History() {
     name: "",
     phone: "",
     location: "",
-    wasteType: "",
+    wasteType: [],
     date: "",
     instructions: "",
   });
@@ -18,18 +19,45 @@ export default function History() {
 
   // Handle form input changes
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setPickupDetails((prevDetails) => ({
-      ...prevDetails,
-      [name]: value,
-    }));
+    const { name, value, checked } = e.target;
+
+    if (name === "wasteType") {
+      setPickupDetails((prevDetails) => {
+        let newWasteTypes = [...prevDetails[name]];
+
+        if (checked) {
+          // Add to the list if checked
+          newWasteTypes.push(value);
+        } else {
+          // Remove from the list if unchecked
+          newWasteTypes = newWasteTypes.filter((item) => item !== value);
+        }
+
+        return {
+          ...prevDetails,
+          [name]: newWasteTypes,
+        };
+      });
+    } else {
+      // For other fields (like text or phone)
+      setPickupDetails((prevDetails) => ({
+        ...prevDetails,
+        [name]: value,
+      }));
+    }
   };
 
   // Handle form submission (Adding to history)
   const handleAddPickup = (e) => {
     e.preventDefault();
 
-    if (!pickupDetails.name || !pickupDetails.phone || !pickupDetails.location || !pickupDetails.wasteType || !pickupDetails.date) {
+    if (
+      !pickupDetails.name ||
+      !pickupDetails.phone ||
+      !pickupDetails.location ||
+      !pickupDetails.wasteType ||
+      !pickupDetails.date
+    ) {
       alert("Please fill in all fields.");
       return;
     }
@@ -56,8 +84,8 @@ export default function History() {
   return (
     <div className="history-container">
       <h2 className="history_header">History</h2>
-         {/* Pickup History List */}
-         <ul className="history-list">
+      {/* Pickup History List */}
+      <ul className="history-list">
         {history.length === 0 ? (
           <p>No pickup requests yet.</p>
         ) : (
@@ -74,16 +102,25 @@ export default function History() {
         + Request Pickup
       </button>
 
-   
-
       {/* Modal */}
 
       {isModalOpen && (
-        <div className="modal-overlay">
+        <motion.div
+          className="modal-overlay"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
           <div className="modal-content">
             <h2>Request Waste Pickup</h2>
-            <form onSubmit={handleAddPickup} className="request_form">
-            <label>
+            <form
+              onSubmit={handleAddPickup}
+              className="request_form"
+              action="https://your-backend-endpoint.com/pickup-request"
+              method="POST"
+            >
+              <label>
                 Full Name:
                 <input
                   type="text"
@@ -117,21 +154,68 @@ export default function History() {
                 Phone Number
                 <input type="tel" name="Phone-number" placeholder="" required />
               </label>
-              <label>
+              {/* <label>
                 Waste Type:
                 <select
                   name="wasteType"
                   value={pickupDetails.wasteType}
                   onChange={handleInputChange}
+                  // multiple
                   required
                 >
-                  <option value="">Select Type</option>
                   <option value="organic">Organic</option>
                   <option value="plastic">Plastic</option>
                   <option value="electronic">Electronic</option>
                   <option value="hazardous">Hazardous</option>
                 </select>
-              </label>
+              </label> */}
+              <label>Waste Type:</label>
+              <div className="checkbox-con">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="wasteType"
+                    value="organic"
+                    checked={pickupDetails.wasteType.includes("organic")}
+                    onChange={handleInputChange}
+                  />
+                  Organic
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="wasteType"
+                    value="plastic"
+                    checked={pickupDetails.wasteType.includes("plastic")}
+                    onChange={handleInputChange}
+                  />
+                  Plastic
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="wasteType"
+                    value="electronic"
+                    checked={pickupDetails.wasteType.includes("electronic")}
+                    onChange={handleInputChange}
+                  />
+                  Electronic
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="wasteType"
+                    value="hazardous"
+                    checked={pickupDetails.wasteType.includes("hazardous")}
+                    onChange={handleInputChange}
+                  />
+                  Hazardous
+                </label>
+              </div>
+
               <label>
                 Preferred Date & Time:
                 <input
@@ -157,9 +241,8 @@ export default function History() {
               </button>
             </form>
           </div>
-        </div>
+        </motion.div>
       )}
-      
     </div>
   );
 }

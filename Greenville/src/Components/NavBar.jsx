@@ -1,8 +1,9 @@
 import HamburgerMenu from "./HamburgerMenu";
-import { Logo } from "../assets";
 import { Link } from "react-router-dom";
-
+import { clogo } from "../assets";
 import { useNavigate} from "react-router-dom";
+import { motion } from "framer-motion";
+
 export default function NavBar() {
   const navigate = useNavigate();
   return (
@@ -11,7 +12,7 @@ export default function NavBar() {
       <header>
         
          <Link to="/">
-          <img src={Logo} className="logopic" alt="logo" />
+          {/* <img src={Logo} alt="logo" /> */}
         </Link>
         
         <nav className="simple-Nav">
@@ -36,8 +37,12 @@ export default function NavBar() {
        <button onClick={() => navigate("/Sign in")}className="signin" >Sign In</button>
        <button  onClick={() => navigate("/Sign up")}  className="signout">Sign Up</button>
        </div>  
-       <div className="sidebar"></div>
-       <HamburgerMenu  className="hamburger"/>
+       <div className="sidebar">
+      
+        
+        
+       </div>
+       <HamburgerMenu className="hamburger"/>
        <h2 className="greenville">GREENVILLE</h2>
       </header>
       

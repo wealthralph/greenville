@@ -4,14 +4,21 @@ import PaymentMeter from "../Components/Dashboard components/PaymentMeter"
 import PickupStats from "../Components/Dashboard components/PickupStats"
 import Barchart from "../Components/Dashboard components/Barchart"
 import History from "../Components/Dashboard components/History"
+import Sidebar from "./Dashboard components/Sidebar"
+import Search from "./Dashboard components/Search"
+import UserProfile from "./Dashboard components/UserProfile"
+
 
 // import FloatingButton from "./FloatingRoundButton";
 export default function Dashboard() {
   return (
     <>
       {/* <HamburgerMenu /> */}
-      <Greetings name={"Elo"} />
-      <DashboardCard />
+      {/* <Greetings name={"Elo"} /> */}
+      <Search />
+      {/* <DashboardCard /> */}
+      <Sidebar/>
+      <UserProfile />
       <PaymentMeter />
       <PickupStats />
       <Barchart />
