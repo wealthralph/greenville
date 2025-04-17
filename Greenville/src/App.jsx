@@ -9,6 +9,7 @@ import Page404 from './Components/Page404';
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from './Components/NavBar'
+import ContactUs from './Components/ContactUs'
 
 
 
@@ -18,10 +19,11 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    {/* <NavBar /> */}
+    <NavBar />
     <Routes> 
       <Route path='/' element={<Home />} />
       <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/contactUs' element={<ContactUs/>} />
       <Route path='/Sign up' element={<SignUp />} />
       <Route path='/Sign In' element={<SignIn />} />
       <Route path='/Forgot Password' element={<ForgotPassword />} />
