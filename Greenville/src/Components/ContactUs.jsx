@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { clogo, contact } from "../assets";
+import { contact } from "../assets";
+import Footer from "./Home components/Footer";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -25,6 +26,7 @@ export default function ContactUs() {
   };
 
   return (
+    <>
     <div className="contactUs_con">
       <div className="contactUs_text">
         <h1>Get in touch</h1>
@@ -99,5 +101,7 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
+     <Footer />
+     </>
   );
 }
