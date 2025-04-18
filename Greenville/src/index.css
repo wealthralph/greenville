@@ -139,6 +139,12 @@ select {
     margin-top: 1em;
     padding-inline: 1em;
   }
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
   .areaContainer {
     background: var(--primary-variant);
     margin-bottom: 1em;
@@ -1942,6 +1948,12 @@ progress::-webkit-progress-bar {
     display: flex;
     flex-direction: column;
     align-content: center;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
   }
   .firstRow {
     display: flex;
