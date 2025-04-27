@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function History() {
@@ -12,7 +12,36 @@ export default function History() {
     date: "",
     instructions: "",
   });
+  
+  const initialVisibleItems = 5;
+  const [visibleItems, setVisibleItems] = useState(initialVisibleItems);
+  const [showSeeMore, setShowSeeMore] = useState(false);
+  const [showSeeLess, setShowSeeLess] = useState(false);
 
+  // Update navigation links whenever history or visible items change
+  useEffect(() => {
+    setShowSeeMore(history.length > visibleItems);
+    setShowSeeLess(visibleItems > initialVisibleItems);
+  }, [history, visibleItems]);
+
+  const loadMore = () => {
+    const nextVisibleItems = visibleItems + 5;
+    setVisibleItems(nextVisibleItems);
+    
+    // Hide "see more" if we've shown all items
+    if (nextVisibleItems >= history.length) {
+      setShowSeeMore(false);
+    }
+    // Show "see less" when we're showing more than initial count
+    setShowSeeLess(true);
+  };
+  
+  const loadLess = () => {
+    setVisibleItems(initialVisibleItems);
+    setShowSeeLess(false);
+    setShowSeeMore(history.length > initialVisibleItems);
+  };
+  
   // Handle opening/closing modal
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -55,7 +84,7 @@ export default function History() {
       !pickupDetails.name ||
       !pickupDetails.phone ||
       !pickupDetails.location ||
-      !pickupDetails.wasteType ||
+      pickupDetails.wasteType.length === 0 ||
       !pickupDetails.date
     ) {
       alert("Please fill in all fields.");
@@ -74,7 +103,7 @@ export default function History() {
       name: "",
       phone: "",
       location: "",
-      wasteType: "",
+      wasteType: [],
       date: "",
       instructions: "",
     });
@@ -83,27 +112,58 @@ export default function History() {
 
   return (
     <div className="history-container">
-      <h2 className="history_header">History</h2>
+      <div className="history-div">
+        <h2 className="history_header">Waste Pickup History</h2>
+        <div className="history-navigation">
+          {showSeeMore && (
+            <span className="see-more-link" onClick={loadMore}>
+              see more
+            </span>
+          )}
+          {showSeeLess && (
+            <span className="see-less-link" onClick={loadLess}>
+              see less
+            </span>
+          )}
+        </div>
+        <button className="add-pickup" onClick={openModal}>
+          Request Pickup
+        </button>
+      </div>
+      
       {/* Pickup History List */}
       <ul className="history-list">
         {history.length === 0 ? (
           <p>No pickup requests yet.</p>
         ) : (
-          history.map((item) => (
+          history.slice(0, visibleItems).map((item) => (
             <li key={item.id} className="history-item">
-              <strong>Location:</strong> {item.location} <br />
-              <strong>Waste Type:</strong> {item.wasteType} <br />
-              <span>{item.date}</span>
+              <br />
+              <span className="item-location">{item.location} </span>
+              <svg
+                className="lil-truck"
+                width="21"
+                height="14"
+                viewBox="0 0 21 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 13H2V9M1 1H12V13M8 13H14M18 13H20V7M20 7H12M20 7L17 2H12M2 5H6"
+                  stroke="#1B5B33"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span className="item-date">{item.date}</span>
+              <hr></hr>
             </li>
           ))
         )}
       </ul>
-      <button className="add-pickup" onClick={openModal}>
-        + Request Pickup
-      </button>
 
       {/* Modal */}
-
       {isModalOpen && (
         <motion.div
           className="modal-overlay"
@@ -150,25 +210,6 @@ export default function History() {
                   required
                 />
               </label>
-              <label className="label">
-                Phone Number
-                <input type="tel" name="Phone-number" placeholder="" required />
-              </label>
-              {/* <label>
-                Waste Type:
-                <select
-                  name="wasteType"
-                  value={pickupDetails.wasteType}
-                  onChange={handleInputChange}
-                  // multiple
-                  required
-                >
-                  <option value="organic">Organic</option>
-                  <option value="plastic">Plastic</option>
-                  <option value="electronic">Electronic</option>
-                  <option value="hazardous">Hazardous</option>
-                </select>
-              </label> */}
               <label>Waste Type:</label>
               <div className="checkbox-con">
                 <label>

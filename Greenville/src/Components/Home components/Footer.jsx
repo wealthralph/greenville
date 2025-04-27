@@ -34,7 +34,7 @@ export default function Footer() {
           </ul>
         </section>
 
-        <section className="footer_section">
+        <section id="footer-contact" className="footer_section">
           <h3 className="footer_heading">Contact</h3>
           <p className="footer_paragraph">
             No. 3 Segun Festus Oluwa street, off Anthony Enahoro, Ikoyi, Lagos
@@ -66,7 +66,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-        </section>
+        </section> 
         <section className="footer_social-media">
               <a href="#" className="footer_social-link" aria-label="Facebook">
                 <FaFacebookF className="socialmedia-icon facebook" />

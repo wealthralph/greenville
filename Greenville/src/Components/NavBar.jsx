@@ -11,22 +11,9 @@ export default function NavBar() {
     
       <header>
         
-        <Link to="/">
-  <motion.img
-    src={clogo}
-    alt="logo"
-    className="navlogo"
-    animate={{
-      rotate: 360, // Rotating 360 degrees
-    }}
-    transition={{
-      repeat: Infinity, // Infinite loop
-      repeatType: "loop", // Continuous loop
-      duration: 10, // Rotation speed, adjust as needed
-      ease: "linear", // Smooth continuous rotation
-    }}
-  />
-</Link>
+         <Link to="/">
+          {/* <img src={Logo} alt="logo" /> */}
+        </Link>
         
         <nav className="simple-Nav">
           <ul className="navlinks">
@@ -47,7 +34,7 @@ export default function NavBar() {
 
 
        <div className="buttons">
-       <button onClick={() => navigate("/Sign in")}className="signin">Sign In</button>
+       <button onClick={() => navigate("/Sign in")}className="signin" >Sign In</button>
        <button  onClick={() => navigate("/Sign up")}  className="signout">Sign Up</button>
        </div>  
        <div className="sidebar">
@@ -56,9 +43,7 @@ export default function NavBar() {
         
        </div>
        <HamburgerMenu className="hamburger"/>
-      <h2 className="greenville">
-        <Link to='/'> GREENVILLE</Link>
-       </h2>
+       <h2 className="greenville">GREENVILLE</h2>
       </header>
       
     
