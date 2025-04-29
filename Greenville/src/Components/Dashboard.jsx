@@ -19,10 +19,10 @@ export default function Dashboard() {
       {/* <DashboardCard /> */}
       <Sidebar/>
       <UserProfile />
-      <PaymentMeter />
       <PickupStats />
       <Barchart />
-      <History />
+      <PaymentMeter />
+      <History /> 
     </>
   );
 }
