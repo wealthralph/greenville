@@ -7,7 +7,7 @@ export default function Areas() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 3,
+        duration: 0.8,
         ease: "easeInOut",
       },
     },
@@ -16,47 +16,51 @@ export default function Areas() {
   const hoverEffect = {
     whileHover: {
       scale: 1.05,
-      boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)", // Apply box-shadow on hover
+      boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
       transition: { duration: 0.3, ease: "easeOut" },
     },
   };
 
+  const locations = [
+    { name: "Ikeja", className: "ikeja" },
+    { name: "V.I", className: "vi" },
+    { name: "Jakande", className: "jakande" },
+    { name: "Ikate", className: "ikate" },
+    { name: "Chevron", className: "chevron" },
+    { name: "Ikoyi", className: "ikoyi" },
+  ];
+
   return (
-    <motion.div
-      className="areaContainer"
-      variants={slideIn}
-      initial="hidden"
-      animate="visible"
-    >
-      <h1 className="areaHeader">We’re in Your Neighborhood</h1>
+    <div className="areaContainer">
+      <motion.h1
+        className="areaHeader"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={slideIn}
+      >
+        We’re in Your Neighborhood
+      </motion.h1>
+
       <div className="areas">
-        <div className="firstRow">
-          <motion.div className="ikeja" {...hoverEffect}>
-            <h3>Ikeja</h3>
-          </motion.div>
-          <motion.div className="vi" {...hoverEffect}>
-            <h3>V.I</h3>
-          </motion.div>
-        </div>
-
-        <div className="secondRow">
-          <motion.div className="jakande" {...hoverEffect}>
-            <h3>Jakande</h3>
-          </motion.div>
-          <motion.div className="ikate" {...hoverEffect}>
-            <h3>Ikate</h3>
-          </motion.div>
-        </div>
-
-        <div className="thirdRow">
-          <motion.div className="chevron" {...hoverEffect}>
-            <h3>Chevron</h3>
-          </motion.div>
-          <motion.div className="ikoyi" {...hoverEffect}>
-            <h3>Ikoyi</h3>
-          </motion.div>
-        </div>
+        {[0, 2, 4].map((startIdx) => (
+          <div className={`row row-${startIdx / 2 + 1}`} key={startIdx}>
+            {locations.slice(startIdx, startIdx + 2).map((location, i) => (
+              <motion.div
+                key={location.name}
+                className={location.className}
+                variants={slideIn}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                {...hoverEffect}
+              >
+                <h3>{location.name}</h3>
+              </motion.div>
+            ))}
+          </div>
+        ))}
       </div>
-    </motion.div>
+    </div>
   );
 }

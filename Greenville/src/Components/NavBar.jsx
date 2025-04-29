@@ -27,7 +27,7 @@ export default function NavBar() {
             <Link to="/faq">FAQ</Link>
             </li>
             <li className="list"> 
-            <Link to="/contact">Contact</Link>
+            <Link to="/contactUs">Contact Us</Link>
             </li>
           </ul>
         </nav>

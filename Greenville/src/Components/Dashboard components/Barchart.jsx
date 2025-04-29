@@ -120,7 +120,7 @@ const data = [
   { date: "2000-12", uv: 1890, pv: 4800, amt: 2181, points: 500 },
 ];
 
-const monthTickFormatter = (tick) => {
+/*const monthTickFormatter = (tick) => {
   const date = new Date(tick);
   return date.getMonth() + 1;
 };
@@ -147,14 +147,51 @@ const renderQuarterTick = (tickProps) => {
     return <path d={`M${pathX},${y - 4}v${-35}`} stroke="red" />;
   }
   return null;
+};*/
+
+const monthTickFormatter = (tick) => {
+  const date = new Date(tick);
+  const monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  return monthNames[date.getMonth()];
+};
+
+const renderQuarterTick = (tickProps) => {
+  const { x, y, payload } = tickProps;
+  const { value, offset } = payload;
+  const date = new Date(value);
+  const month = date.getMonth();
+  const quarterNo = Math.floor(month / 3) + 1;
+
+  if (month % 3 === 1) {
+    return (
+      <text x={x} y={y + 20} textAnchor="middle" fill="#666">
+        {`Q${quarterNo}`}
+      </text>
+    );
+  }
+
+  return null;
 };
 
 export default function App() {
   return (
     <BarChart
     className="barz"
-      width={400}
-      height={300}
+      width={800}
+      height={600}
       data={data}
       margin={{ top: 30, right: 30, left: -15, bottom: 5 }}
     >

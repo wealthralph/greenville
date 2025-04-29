@@ -17,7 +17,8 @@ export default function Dashboard() {
       {/* <Greetings name={"Elo"} /> */}
       <Search />
       {/* <DashboardCard /> */}
-      <Sidebar/>
+      <Sidebar />
+      <UserStat />
       <UserProfile />
       <PaymentMeter />
       <PickupStats />
