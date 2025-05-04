@@ -1563,7 +1563,7 @@ button:hover {
   height: auto;
   margin: 0 auto;
 }
-.sidebar_con {
+/*.sidebar_con {
   margin-top:60px;
   width: 100%;
   max-width: 330px;
@@ -1571,7 +1571,71 @@ button:hover {
   flex-direction: column;
   border: 1px solid #e0e0e0;
   height: 100vh;
+  z-index: 100;
+}*/
+/*Dashboard Sidebar*/
+.sidebar_con {
+  margin-top: 3%;              
+  position: relative;          
+  top: -30px;                 
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  height: calc(100vh + 30px);  
+  
+  /* Shadow Effects */
+  box-shadow: 
+    0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),   
+    2px 0 8px -1px rgba(0, 0, 0, 0.1);   
+  
+  z-index: 10;                
+  background: white;         
+  border-radius: 0 8px 8px 0;  
 }
+.sidenav_list a {
+  display: flex;          /* Makes icon and text align horizontally */
+  align-items: center;    /* Vertically centers the items */
+  gap: 10px;             /* Adds space between icon and text */
+  padding: 10px 15px;    /* Adds padding for better click area */
+}
+
+.sidenav_list svg {
+  font-size: 1.2rem;     /* Adjust icon size if needed */
+  min-width: 24px;       /* Ensures consistent width for icons */
+}
+
+.sidebar_logoutbtn {
+  display: flex;         /* Aligns logout icon and text */
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  margin-top: 80%;
+}
+.sidenav_list a:hover,
+.sidebar_logoutbtn:hover {
+  background-color: var(--primary);
+  color: white !important;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.active-dashboard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  color: inherit;
+  cursor: default;
+  /* Match your existing link styles */
+}
+
+.active-dashboard svg {
+  color: inherit;
+}
+/*---------------------------*/
+
 .menu_btn_two {
   background: var(--primary);
   border-radius: 5px;
