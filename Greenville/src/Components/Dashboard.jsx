@@ -9,6 +9,8 @@ import Sidebar from "./Dashboard components/Sidebar";
 import Search from "./Dashboard components/Search";
 import UserProfile from "./Dashboard components/UserProfile";
 
+
+
 // import FloatingButton from "./FloatingRoundButton";
 export default function Dashboard() {
   return (
@@ -25,9 +27,13 @@ export default function Dashboard() {
 
         <div className="dashboard-widgets">
           <Barchart />
-          <PaymentMeter />
+         
+          <div className="lil-widgets">
+            
+            <PaymentMeter />
           <PickupStats />
           <History />
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import { SignupImage } from "../../assets";
 export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -57,20 +57,16 @@ export default function SignIn() {
   return (
     <div className="signin_con">
       <div className="greencard">
-        <h2 className="greentext">
-          Welcome to <span className="greenv-text">Greenville</span>
-        </h2>
-        <h3 className="greensubtext">
-          Join Us in Keeping the Planet Clean – Sign Up & Make a Difference!
-          🌍♻️
-        </h3>
+      <section className="leftSection">
+        <h1 className="title">
+          Welcome to <br /><span>Greenville</span>
+        </h1>
+        <p className="titleParagraph">
+          Join Us in Keeping the Planet Clean – Sign Up & Make a Difference! 🌍♻️
+        </p> </section>
         <br></br> <br></br>
-        <div className="imagediv">
-          <img
-            src="../src/assets/images/signup.png"
-            id="image"
-            alt="GREENVILLE"
-          />
+        <div className="">
+           <img src={SignupImage} alt="Signup visual" className="singin-img"/>
         </div>
       </div>
       <br></br>

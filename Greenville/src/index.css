@@ -78,8 +78,18 @@ select {
   padding: 10px 15px;
   transition: background-color 0.3s, border-color 0.3s;
 }
+.lil-widgets{
+  display: flex;
+  flex-direction: row-reverse;
+    margin-top: 120px;
+    justify-content: space-between;
+    gap: 120px;
+}
 
 @media (max-width: 480px) {
+  .singin-img{
+    visibility: hidden;
+  }
    /* .hamburger */
 
 
@@ -93,7 +103,13 @@ select {
     display: none;
   }
 
-
+.lil-widgets{
+  display: flex;
+  flex-direction: column-reverse;
+margin-top: 100px;
+  justify-content: space-between;
+  gap: 120px;
+}
 
   /* Subscribe */
   .subscribeCon {
@@ -349,15 +365,10 @@ align-items: center;
   visibility: visible;
 }
 
-imagediv. {
-  width: 100%;
-  margin-bottom: 30px;
-  overflow: hidden;
-}
 
 #image {
   width: 100%;
- 
+ display: block;
   border-radius: 4px;
   height: 380px;
 } */
@@ -1492,10 +1503,11 @@ button:hover {
 /*dashboard widgets*/
 
 .dashboard-widgets {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "barchart payment"
-      "history pickup";
+      "history pickup"
+      "payment meter";
   }
 
   .barchart {
@@ -1776,6 +1788,10 @@ button:hover {
   border-radius: 10px;
   padding: 1em;
   margin: 0 auto;
+  margin-left: 50px;
+  margin-top: -100px;
+ 
+ 
 }
 .meter {
   width: 100%;
@@ -1869,12 +1885,19 @@ progress::-webkit-progress-bar {
   text-align: left;
 }
 .history-container {
+  
+
   padding: 20px;
-  max-width: 550px;
+  max-width: 400px;
   margin: auto;
   text-align: center;
   border:1px solid #555658;
   border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 50px;
+  margin-top: -100px;
 }
 .lil-truck{
  
@@ -2695,7 +2718,7 @@ header {
 /*barchart*/
 .barz {
 
-  max-width: 400px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -2703,6 +2726,11 @@ header {
 
 /* Small Mobile Styles (up to 480px) */
 @media screen and (max-width: 480px) {
+  .tracker_content{
+
+
+  left: -460px;
+   }
   header {
     padding: 0 3%;
     height: 50px;
@@ -2711,9 +2739,7 @@ header {
     margin-top: -30px !important;
   }
 }
-.imagediv{
-  display: none;
-}
+
 
 .hamburger{
   visibility: visible;
@@ -2735,11 +2761,11 @@ header {
     margin: 8px 0;
   } */
 
-  /* .greenville-sidebar{
+  /* .greenville-sidebar {
     font-size: 1.5rem;
     margin-bottom: 15px;
-  }
-   */
+  } */
+  
 }
 
 /* Large Desktop Styles */
