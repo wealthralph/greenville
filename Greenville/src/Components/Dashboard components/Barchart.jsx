@@ -203,7 +203,7 @@ export default function App() {
       <BarChart
         className="barz"
         width={500}
-        height={400}
+        height={600}
         data={data}
         margin={{ top: 30, right: 30, left: 20, bottom: 5 }}
         barCategoryGap="15%" // Increased space between bars

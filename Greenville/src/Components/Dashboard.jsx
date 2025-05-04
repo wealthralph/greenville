@@ -8,6 +8,7 @@ import History from "./Dashboard components/History";
 import Sidebar from "./Dashboard components/Sidebar";
 import Search from "./Dashboard components/Search";
 import UserProfile from "./Dashboard components/UserProfile";
+import TopAreas from "./Dashboard components/TopAreas";
 
 
 
@@ -27,12 +28,13 @@ export default function Dashboard() {
 
         <div className="dashboard-widgets">
           <Barchart />
-         
+          <TopAreas />
+
           <div className="lil-widgets">
-            
+            <History />
             <PaymentMeter />
-          <PickupStats />
-          <History />
+
+            <PickupStats />
           </div>
         </div>
       </div>
