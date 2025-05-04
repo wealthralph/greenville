@@ -2,13 +2,13 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer_links">
+    <footer className="footers" style={{backgroundColor:"#1b5b33"}}>  
+      <div className="footer_links" >
       
         <section className="footer_section">
           
           <ul className="footer_list">
-          <h3 className="footer_heading">Help?</h3>
+          <h3 className="footer_heading" style={{marginTop:"30px"}}>Help?</h3>
            
             <li>
             
@@ -35,7 +35,7 @@ export default function Footer() {
         </section>
 
         <section id="footer-contact" className="footer_section">
-          <h3 className="footer_heading">Contact</h3>
+          <h3 className="footer_heading" style={{marginTop:"30px"}}>Contact</h3>
           <p className="footer_paragraph">
             No. 3 Segun Festus Oluwa street, off Anthony Enahoro, Ikoyi, Lagos
           </p>
@@ -48,7 +48,7 @@ export default function Footer() {
 
         <section className="footer_section">
 
-          <h3 className="footer_heading">Useful Links</h3>
+          <h3 className="footer_heading" style={{marginTop:"30px"}}>Useful Links</h3>
           <ul className="footer_list">
             <li>
               <a href="#" className="footer_link">
@@ -67,7 +67,7 @@ export default function Footer() {
             </li>
           </ul>
         </section> 
-        <section className="footer_social-media">
+        <section className="footer_social-media" style={{marginTop:"-170px"}}>
               <a href="#" className="footer_social-link" aria-label="Facebook">
                 <FaFacebookF className="socialmedia-icon facebook" />
               </a>
@@ -77,7 +77,7 @@ export default function Footer() {
               <a href="#" className="footer_social-link" aria-label="Instagram">
                 <FaInstagram className="socialmedia-icon instagram" />
               </a>
-              <h3>© Copyright 2025</h3>
+              <h3 style={{color:"white"}}>© Copyright 2025</h3>
             </section>
       </div>
     </footer>

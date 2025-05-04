@@ -28,9 +28,12 @@ export default function Dashboard() {
         <div className="dashboard-widgets">
           <Barchart />
          
-          <PaymentMeter />
+          <div className="lil-widgets">
+            
+            <PaymentMeter />
           <PickupStats />
           <History />
+          </div>
         </div>
       </div>
     </div>
