@@ -12,17 +12,24 @@ import UserProfile from "./Dashboard components/UserProfile";
 // import FloatingButton from "./FloatingRoundButton";
 export default function Dashboard() {
   return (
-    <>
-      {/* <HamburgerMenu /> */}
-      {/* <Greetings name={"Elo"} /> */}
-      <Search />
-      {/* <DashboardCard /> */}
-      <Sidebar/>
-      <UserProfile />
-      <PaymentMeter />
-      <PickupStats />
-      <Barchart />
-      <History />
-    </>
+    <div className="dashboard-layout">
+      <Sidebar />
+
+      <div className="dashboard-content">
+        <div className="dashboard-header">
+          <Search />
+          <UserProfile />
+        </div>
+
+        <UserStat />
+
+        <div className="dashboard-widgets">
+          <Barchart />
+          <PaymentMeter />
+          <PickupStats />
+          <History />
+        </div>
+      </div>
+    </div>
   );
 }
