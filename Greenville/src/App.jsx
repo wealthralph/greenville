@@ -6,6 +6,7 @@ import SignIn from "./Components/Auth/SignIn";
 import Home from "./Components/Home";
 import ForgotPassword from "./Components/Auth/ForgotPassword";
 import Page404 from "./Components/Page404";
+import WhatIsGreenville from "./Components/Home components/WhatIsGreenVille";
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./Components/NavBar";
@@ -18,6 +19,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<WhatIsGreenville />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/Sign up" element={<SignUp />} />
