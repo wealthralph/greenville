@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./path/to/About";
-import WhatIsGreenville from "./path/to/WhatIsGreenville";
+import WhatIsGreenville from "./Home components/WhatIsGreenville";
 
 function App() {
   return (
