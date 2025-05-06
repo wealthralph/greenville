@@ -5,6 +5,7 @@ import { GoTasklist } from "react-icons/go";
 import { NewLogo } from "../../assets";
 import { IoIosLogOut } from "react-icons/io";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import ComingSoon from "./ComingSoon";
 
 export default function Sidebar() {
   const location = useLocation();
@@ -14,6 +15,12 @@ export default function Sidebar() {
     if (location.pathname === "/") {
       e.preventDefault();
     }
+  };
+  const handleComingSoonClick = (e) => {
+    e.preventDefault();
+    alert("This feature is coming soon!");
+    // Alternatively, you could use a modal or another method to show the message
+    // For example, you could set a state variable to show a modal component
   };
   return (
     /*<div className="sidebar_con">
@@ -69,19 +76,19 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className="sidenav_list">
-            <Link to="/settings">
+            <Link to="/settings" onClick={handleComingSoonClick}>
               <IoSettingsOutline />
               Settings
             </Link>
           </li>
           <li className="sidenav_list">
-            <Link to="/tasks">
+            <Link to="/tasks" onClick={handleComingSoonClick}>
               <GoTasklist />
               Tasks
             </Link>
           </li>
           <li className="sidenav_list">
-            <Link to="/calendar">
+            <Link to="/calendar" onClick={handleComingSoonClick}>
               <CiCalendar />
               Calendar
             </Link>

@@ -103,6 +103,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ResponsiveContainer,
 } from "recharts";
 
 const data = [
@@ -200,47 +201,49 @@ export default function App() {
       >
         Monthly Engagement Stats
       </h1>
-      <BarChart
-        className="barz"
-        width={500}
-        height={600}
-        data={data}
-        margin={{ top: 30, right: 30, left: 20, bottom: 5 }}
-        barCategoryGap="15%" // Increased space between bars
-      >
-        <CartesianGrid strokeDasharray="1 3" stroke="transparent"/>
-        <XAxis
-          dataKey="date"
-          tickFormatter={monthTickFormatter}
-          tick={{
-            fontSize: 10, // Smaller font size
-            fontWeight: "normal",
-            fill: "#555", // Darker color for better visibility
-          }}
-          interval={0}
-          axisLine={false}
-          tickLine={false}
-        />
-        <XAxis
-          dataKey="date"
-          axisLine={false}
-          tickLine={false}
-          interval={0}
-          tick={renderQuarterTick}
-          height={20} // Adjusted height for visibility
-          scale="band"
-          // xAxisId="quarter"
-        />
-        <YAxis dataKey="points" />
-        <Tooltip />
-        <Legend />
-        <Bar
-          dataKey="points"
-          fill="#B6F5AC"
-          name="Engagement Points"
-          barSize={10}
-        />
-      </BarChart>
+      <ResponsiveContainer width="100%" height={400}>
+        <BarChart
+          className="barz"
+          width={500}
+          height={400}
+          data={data}
+          margin={{ top: 30, right: 30, left: 20, bottom: 5 }}
+          barCategoryGap="15%" // Increased space between bars
+        >
+          <CartesianGrid strokeDasharray="1 3" stroke="transparent" />
+          <XAxis
+            dataKey="date"
+            tickFormatter={monthTickFormatter}
+            tick={{
+              fontSize: 10, // Smaller font size
+              fontWeight: "normal",
+              fill: "#555", // Darker color for better visibility
+            }}
+            interval={0}
+            axisLine={false}
+            tickLine={false}
+          />
+          <XAxis
+            dataKey="date"
+            axisLine={false}
+            tickLine={false}
+            interval={0}
+            tick={renderQuarterTick}
+            height={20} // Adjusted height for visibility
+            scale="band"
+            // xAxisId="quarter"
+          />
+          <YAxis dataKey="points" />
+          <Tooltip />
+          <Legend />
+          <Bar
+            dataKey="points"
+            fill="#B6F5AC"
+            name="Engagement Points"
+            barSize={10}
+          />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 }

@@ -6,17 +6,20 @@ import SignIn from "./Components/Auth/SignIn";
 import Home from "./Components/Home";
 import ForgotPassword from "./Components/Auth/ForgotPassword";
 import Page404 from "./Components/Page404";
-import WhatIsGreenville from "./Components/Home components/WhatIsGreenVille";
+import WhatIsGreenville from "./Components/Home components/WhatIsGreenville";
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import ContactUs from "./Components/ContactUs";
+import ComingSoon from "./Components/Dashboard components/ComingSoon";
+import Sidebar from "./Components/Dashboard components/Sidebar";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<WhatIsGreenville />} />
@@ -26,10 +29,12 @@ function App() {
           <Route path="/Sign In" element={<SignIn />} />
           <Route path="/Forgot Password" element={<ForgotPassword />} />
           <Route path="*" element={<Page404 />} />
+          <Route path="/settings" element={<ComingSoon />} />
+          <Route path="/tasks" element={<ComingSoon />} />
+          <Route path="/calendar" element={<ComingSoon />} />
         </Routes>
       </BrowserRouter>
     </>
   );
 }
-
 export default App;
