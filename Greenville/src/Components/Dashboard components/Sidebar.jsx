@@ -18,9 +18,8 @@ export default function Sidebar() {
   };
   const handleComingSoonClick = (e) => {
     e.preventDefault();
-    alert("This feature is coming soon!");
-    // Alternatively, you could use a modal or another method to show the message
-    // For example, you could set a state variable to show a modal component
+    alert("This feature is coming soon!"); 
+    
   };
   return (
     /*<div className="sidebar_con">
