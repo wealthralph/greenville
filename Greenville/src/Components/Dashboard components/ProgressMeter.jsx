@@ -26,13 +26,7 @@ export default function ProgressMeter(){
         alert("You just got a reward! Keeping it green Pays 👍 ");
       }
    }
-
-   
-
-   
-        
      
-    
     return(
 
         <div className="tracker-content">
