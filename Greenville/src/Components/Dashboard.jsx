@@ -16,6 +16,9 @@ import TopAreas from "./Dashboard components/TopAreas";
 export default function Dashboard() {
   return (
     <div className="dashboard-layout">
+      <header className="H-greenville">
+        <h2 className="W-greenville">WELCOME TO GREENVILLE</h2>
+      </header>
       <Sidebar />
 
       <div className="dashboard-content">

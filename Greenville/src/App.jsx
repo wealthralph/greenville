@@ -13,6 +13,7 @@ import NavBar from "./Components/NavBar";
 import ContactUs from "./Components/ContactUs";
 import ComingSoon from "./Components/Dashboard components/ComingSoon";
 import Sidebar from "./Components/Dashboard components/Sidebar";
+import FAQ from "./Components/Home components/FAQ";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<WhatIsGreenville />} />
+          <Route path ="/faq" element ={<FAQ/>}/>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/Sign up" element={<SignUp />} />

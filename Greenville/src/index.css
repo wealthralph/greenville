@@ -1726,6 +1726,21 @@ button:hover {
   width: 100%;
   box-sizing: border-box;
 }
+.H-greenville{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.W-greenville{
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-style: bold;
+  font-weight: 600;
+}
+
 
 /* For desktop layouts */
 @media (min-width: 1024px) {
@@ -1750,6 +1765,9 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
   }
+ .W-greenville{
+  visibility: hidden;
+ }
 }
 /*.......................*/
 /* Content area */
