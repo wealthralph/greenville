@@ -1,5 +1,5 @@
 import HeroSection from "./Home/HeroSection"
-import WhatIsGreenville from "./Home/WhatIsGreenville"
+import WhatIsGreenville from "./Home/WhatIsGreenVille"
 import AreasWeCover from "./Home/AreasWeCover"
 import OurServices from "./Home/OurServices"
 import CardPlans from "./Home/CardPlans"

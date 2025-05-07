@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import WhatIsGreenville from "./Home components/WhatIsGreenville";
+import WhatIsGreenville from "./Home/WhatIsGreenVille";
 
-function App() {
+function About() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<WhatIsGreenville />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
 }
+
+export default About
