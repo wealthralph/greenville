@@ -1,5 +1,4 @@
 import HeroSection from "./Home/HeroSection"
-import WhatIsGreenville from "./Home/WhatIsGreenVille"
 import AreasWeCover from "./Home/AreasWeCover"
 import OurServices from "./Home/OurServices"
 import CardPlans from "./Home/CardPlans"
@@ -7,14 +6,14 @@ import FAQ from "./Home/FAQ"
 import Footer from "./Home/Footer"
 import Subscribe from "./Home/Subscribe"
 import WhyTheyBelieveUs from "./Home/WhyTheyBelieveUs"
-
+import WhatIsGreenVille from "./Home/WhatIsGreenVille"
 
 export default function Home(){
     return (
       <>
         <HeroSection />
         <WhyTheyBelieveUs />
-        <WhatIsGreenville />
+        <WhatIsGreenVille />
         <OurServices />
         <AreasWeCover />
         <CardPlans />
