@@ -10,7 +10,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import ContactUs from "./Components/ContactUs";
 import FAQ from "./Components/Home/FAQ";
-import WhatIsGreenville from "./Components/Home/WhatIsGreenville";
+// import WhatIsGreenville from "./Components/Home/WhatIsGreenville";
 import ComingSoon from "./Components/Dashboard/ComingSoon";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<WhatIsGreenville />} />
+          {/* <Route path="/about" element={<WhatIsGreenville />} /> */}
           <Route path ="/faq" element ={<FAQ/>}/>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/contactUs" element={<ContactUs />} />
