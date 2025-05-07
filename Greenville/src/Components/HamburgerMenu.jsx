@@ -50,7 +50,7 @@ export default function HamburgerMenu() {
           </li>
           <li>
             <NavLink
-              to="/contact"
+              to="/contactUs"
               className={({ isActive }) =>
                 isActive ? "active menu-link" : "menu-link"
               }

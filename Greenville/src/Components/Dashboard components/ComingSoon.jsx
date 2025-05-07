@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { clogo } from "../../assets";
 
-export default function Subscribe() {
+export default function ComingSoon() {
   const fadeInSlide = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -16,17 +16,17 @@ export default function Subscribe() {
 
   return (
     <motion.div
-      className="subscribeCon"
+      className="coming-soon-container"
       variants={fadeInSlide}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="phoneMock">
+      <div className="animation-section">
         <motion.img
           src={clogo}
           alt="logo"
-          className="myMock"
+          className="rotating-logo"
           animate={{
             rotate: 360,
           }}
@@ -40,34 +40,23 @@ export default function Subscribe() {
       </div>
 
       <motion.div
-        className="otherHalf"
+        className="text-section"
         variants={fadeInSlide}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="anticipationText">
-          <h1 className="subSecHeader">
-            Coming soon <br />
-            Greenville Application
+        <div className="coming-soon-text">
+          <h1 className="coming-soon-header">
+            Coming soon!
+            <br />
+            Feature Under Development
           </h1>
-          <p className="subSecParagraph">
-            Imagine being able to request, track, and manage your waste pickups from your mobile phone... soon you'll be able to.
+          <p className="coming-soon-message">
+            We're working hard to bring you this feature. Stay tuned!
           </p>
-        </div>
-
-        <div className="anticipateForm">
-          <form>
-            <input
-              type="email"
-              placeholder="Enter Email"
-              className="subInput"
-            />
-            <button className="subBtn">Join waiting list</button>
-          </form>
         </div>
       </motion.div>
     </motion.div>
   );
 }
-

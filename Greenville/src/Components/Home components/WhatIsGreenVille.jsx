@@ -1,4 +1,6 @@
 
+
+
 import { motion } from "framer-motion";
 import sustainable from "../../assets/images/sustainable.png";
 
@@ -18,8 +20,8 @@ export default function WhatIsGreenville() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 4, // 3–5 seconds range
-        ease: "easeIn",
+        duration: 1.2,
+        ease: "easeOut",
       },
     },
   };
@@ -27,9 +29,10 @@ export default function WhatIsGreenville() {
   return (
     <motion.div
       className="whatIsGreenville"
-      initial="hidden"
-      animate="visible"
       variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }} // trigger once, when 30% is visible
     >
       {/* Left Side: Heading, Text, and Button */}
       <div className="textContent">

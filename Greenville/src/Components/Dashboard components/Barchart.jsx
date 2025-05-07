@@ -103,6 +103,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ResponsiveContainer,
 } from "recharts";
 
 const data = [
@@ -120,7 +121,7 @@ const data = [
   { date: "2000-12", uv: 1890, pv: 4800, amt: 2181, points: 500 },
 ];
 
-const monthTickFormatter = (tick) => {
+/*const monthTickFormatter = (tick) => {
   const date = new Date(tick);
   return date.getMonth() + 1;
 };
@@ -147,33 +148,104 @@ const renderQuarterTick = (tickProps) => {
     return <path d={`M${pathX},${y - 4}v${-35}`} stroke="red" />;
   }
   return null;
+};*/
+
+const monthTickFormatter = (tick) => {
+  const date = new Date(tick);
+  const monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  return monthNames[date.getMonth()];
+};
+
+const renderQuarterTick = (tickProps) => {
+  const { x, y, payload } = tickProps;
+  const { value, offset } = payload;
+  const date = new Date(value);
+  const month = date.getMonth();
+  const quarterNo = Math.floor(month / 3) + 1;
+
+  if (month % 3 === 1) {
+    return (
+      <text x={x} y={y + 20} textAnchor="middle" fill="#666">
+        {`Q${quarterNo}`}
+      </text>
+    );
+  }
+
+  return null;
 };
 
 export default function App() {
   return (
-    <BarChart
-    className="barz"
-      width={400}
-      height={300}
-      data={data}
-      margin={{ top: 30, right: 30, left: -15, bottom: 5 }}
-    >
-      <CartesianGrid strokeDasharray="1 3" />
-      <XAxis dataKey="date" tickFormatter={monthTickFormatter} />
-      <XAxis
-        dataKey="date"
-        axisLine={false}
-        tickLine={false}
-        interval={0}
-        tick={renderQuarterTick}
-        height={20} // Adjusted height for visibility
-        scale="band"
-        // xAxisId="quarter"
-      />
-      <YAxis dataKey="points" />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="points" fill="#B6F5AC" />
-    </BarChart>
+    <div style={{ textAlign: "center" }}>
+      <h1
+        style={{
+          marginBottom: "5px",
+          marginLeft: "10%",
+          textAlign: "left",
+          spacing: 10,
+          fontWeight: "bold",
+        }}
+      >
+        Monthly Engagement Stats
+      </h1>
+      <ResponsiveContainer width="100%" height={400}>
+        <BarChart
+          className="barz"
+          width={500}
+          height={400}
+          data={data}
+          margin={{ top: 30, right: 30, left: 20, bottom: 5 }}
+          barCategoryGap="15%" // Increased space between bars
+        >
+          <CartesianGrid strokeDasharray="1 3" stroke="transparent" />
+          <XAxis
+            dataKey="date"
+            tickFormatter={monthTickFormatter}
+            tick={{
+              fontSize: 10, // Smaller font size
+              fontWeight: "normal",
+              fill: "#555", // Darker color for better visibility
+            }}
+            interval={0}
+            axisLine={false}
+            tickLine={false}
+          />
+          <XAxis
+            dataKey="date"
+            axisLine={false}
+            tickLine={false}
+            interval={0}
+            tick={renderQuarterTick}
+            height={20} // Adjusted height for visibility
+            scale="band"
+            // xAxisId="quarter"
+          />
+          <YAxis dataKey="points" />
+          <Tooltip />
+          <Legend />
+          <Bar
+            dataKey="points"
+            fill="#B6F5AC"
+            name="Engagement Points"
+            barSize={10}
+          />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 }
+
+ 

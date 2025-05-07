@@ -1,5 +1,5 @@
 import HeroSection from "./Home components/HeroSection"
-import WhatIsGreenville from "./Home components/WhatIsGreenVille"
+import WhatIsGreenville from "./Home components/WhatIsGreenville"
 import AreasWeCover from "./Home components/AreasWeCover"
 import OurServices from "./Home components/OurServices"
 import CardPlans from "./Home components/CardPlans"

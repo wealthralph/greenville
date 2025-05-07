@@ -26,7 +26,7 @@ const PaymentMeter = () => {
       </p>
       
       </div>
-      {/* <button className="donate-button" onClick={handlePayment}>Donate</button> */}
+      <button style={{fontSize:"13px",width:"150px"}} className="donate-button" >View Rewards</button>
     </div>
   );
 };

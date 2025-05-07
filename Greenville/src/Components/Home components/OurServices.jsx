@@ -1,8 +1,5 @@
 
-
-
-
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 import { ctrash } from "../../assets";
 import { ctruck } from "../../assets";
 import { cbuilding } from "../../assets";
@@ -41,21 +38,24 @@ export default function OurService() {
       <div className="headerText">
         <h1 className="serviceHeader">What We Offer</h1>
         <span className="service-subHeader">
-        Serving Lagos with innovation, sustainability, and care.
+          Serving Lagos with innovation, sustainability, and care.
         </span>
       </div>
+
       <ul className="servicecard">
         {Services.map((service, index) => (
           <motion.li
             key={index}
-            initial={{ opacity: 0, y: 20 }} // Starting position (slightly below)
-            animate={{
-              opacity: 1,
-              y: 0, // Final position (in place)
-              transition: { duration: 1, delay: index * 0.2 }, // Delay each card animation
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeOut",
+              delay: index * 0.2,
             }}
-            whileHover={{ scale: 1.05 }} // Scale on hover
-            whileTap={{ scale: 0.95 }} // Scale down when tapped/clicked
+            viewport={{ once: true, amount: 0.3 }} // triggers when 30% of card is visible
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <div className="serviceBox">
               <motion.img
@@ -63,11 +63,11 @@ export default function OurService() {
                 src={service.icon}
                 alt={service.title}
                 whileHover={{
-                  rotate: 360, // Rotate 360 degrees on hover
+                  rotate: 360,
                 }}
                 transition={{
-                  duration: 1, // Duration for the rotation on hover
-                  ease: "linear", // Smooth easing for the rotation
+                  duration: 1,
+                  ease: "linear",
                 }}
               />
               <h2 className="serviceTitle">{service.title}</h2>
@@ -80,5 +80,6 @@ export default function OurService() {
     </div>
   );
 }
+
 
 
