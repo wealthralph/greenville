@@ -1,14 +1,13 @@
-import Greetings from "./Dashboard components/Greetings";
-import DashboardCard from "./Dashboard components/DashboardCard";
-import PaymentMeter from "./Dashboard components/PaymentMeter";
-import PickupStats from "./Dashboard components/PickupStats";
-import UserStat from "./Dashboard components/UserStat";
-import Barchart from "./Dashboard components/Barchart";
-import History from "./Dashboard components/History";
-import Sidebar from "./Dashboard components/Sidebar";
-import Search from "./Dashboard components/Search";
-import UserProfile from "./Dashboard components/UserProfile";
-import TopAreas from "./Dashboard components/TopAreas";
+
+import PaymentMeter from "./Dashboard/PaymentMeter";
+import PickupStats from "./Dashboard/PickupStats";
+import UserStat from "./Dashboard/UserStat";
+import Barchart from "./Dashboard/Barchart";
+import History from "./Dashboard/History";
+import Sidebar from "./Dashboard/Sidebar";
+import Search from "./Dashboard/Search";
+import UserProfile from "./Dashboard/UserProfile";
+import TopAreas from "./Dashboard/TopAreas";
 
 
 
@@ -16,9 +15,9 @@ import TopAreas from "./Dashboard components/TopAreas";
 export default function Dashboard() {
   return (
     <div className="dashboard-layout">
-      <header className="H-greenville">
+      {/* <header className="H-greenville">
         <h2 className="W-greenville">WELCOME TO GREENVILLE</h2>
-      </header>
+      </header> */}
       <Sidebar />
 
       <div className="dashboard-content">

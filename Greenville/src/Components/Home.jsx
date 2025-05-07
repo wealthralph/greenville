@@ -1,12 +1,12 @@
-import HeroSection from "./Home components/HeroSection"
-import WhatIsGreenville from "./Home components/WhatIsGreenville"
-import AreasWeCover from "./Home components/AreasWeCover"
-import OurServices from "./Home components/OurServices"
-import CardPlans from "./Home components/CardPlans"
-import FAQ from "./Home components/FAQ"
-import Footer from "./Home components/Footer"
-import Subscribe from "./Home components/Subscribe"
-import WhyTheyBelieveUs from "./Home components/WhyTheyBelieveUs"
+import HeroSection from "./Home/HeroSection"
+import WhatIsGreenville from "./Home/WhatIsGreenville"
+import AreasWeCover from "./Home/AreasWeCover"
+import OurServices from "./Home/OurServices"
+import CardPlans from "./Home/CardPlans"
+import FAQ from "./Home/FAQ"
+import Footer from "./Home/Footer"
+import Subscribe from "./Home/Subscribe"
+import WhyTheyBelieveUs from "./Home/WhyTheyBelieveUs"
 
 
 export default function Home(){

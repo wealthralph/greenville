@@ -6,14 +6,12 @@ import SignIn from "./Components/Auth/SignIn";
 import Home from "./Components/Home";
 import ForgotPassword from "./Components/Auth/ForgotPassword";
 import Page404 from "./Components/Page404";
-import WhatIsGreenville from "./Components/Home components/WhatIsGreenville";
-
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import ContactUs from "./Components/ContactUs";
-import ComingSoon from "./Components/Dashboard components/ComingSoon";
-import Sidebar from "./Components/Dashboard components/Sidebar";
-import FAQ from "./Components/Home components/FAQ";
+import FAQ from "./Components/Home/FAQ";
+import WhatIsGreenville from "./Components/Home/WhatIsGreenville";
+import ComingSoon from "./Components/Dashboard/ComingSoon";
 
 function App() {
   return (

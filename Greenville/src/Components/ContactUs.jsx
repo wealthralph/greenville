@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { contact } from "../assets";
-import Footer from "./Home components/Footer";
+import Footer from "./Home/Footer";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
